@@ -16,7 +16,7 @@ export const FindPageTemplate = ({ title, subtitle, featuredImage, body }) => (
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-    <section className="Find-Card-Overlay">
+    <section className="section Find-Card-Overlay">
       <div className="container">
         <div className="Find-Card">
           <Content source={body} />

@@ -15,20 +15,20 @@ export default () => (
               className="img-fluid"
             />
           </div>
-          <div className="col-lg-3 col-6">
+          <div className="col-lg-4 col-6">
             <h4>Subscribe</h4>
             <div className="col-lg-3 mb-auto py-3">
               <input name="form-name" value="contact" name="newsletter" />
             </div>
           </div>
-          <div className="col-lg-3 col-6">
+          <div className="col-lg-4 col-6">
             <h4>Explore</h4>
             <div className="row">
               <div className="col-lg-6 footer-credits">
                 <li>
                   <Link to="/gyro/">Gyro</Link>
                 </li>
-                a
+
                 <li>
                   <Link to="/products/">Dabaratus</Link>
                 </li>

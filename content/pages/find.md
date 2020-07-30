@@ -1,12 +1,13 @@
 ---
 template: FindPage
 slug: find
-title: Get Bakked
-subtitle: Find A Location Near You.
-featuredImage: '../images/loil/home-masthead@2x.jpg'
+title: LOCATION FINDER
+subtitle: Bakked products are available for purchase throughout California, Colorado, Oregon, New Mexico, Maine & Vermont. You can find a Bakked retailer near you using the map below.
+featuredImage: ' '
+
 meta:
   description: Find Bakked locations here.
-  title: Find
+  title: Location Finder
 ---
 
 <iframe meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"

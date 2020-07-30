@@ -43,14 +43,25 @@
 }
 
 .Form--Input {
-  font-family: inherit;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.93px;
+  text-transform: uppercase;
+
+  font-family: var(--font-secondary);
   flex-grow: 1;
   box-sizing: border-box;
+
   display: block;
   margin: 0;
-  border: 3px solid #000;
-  padding: 1.5rem 2rem;
-  line-height: 1.5em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #000;
+  padding: 1rem 2rem;
   transition: border-color 0.2s;
   resize: none;
   width: 100%;
@@ -87,7 +98,7 @@
 }
 
 .Form--Label.has-arrow:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 2.5rem;
   top: 50%;
@@ -121,10 +132,9 @@
 }
 .Form--SubmitButton {
   background-color: var(--primary);
-  border: 3px solid var(--secondary) !important;
 }
 .Form--SubmitButton:hover {
-  background-color: white !important;
+  background-color: var(--secondary);
   color: var(--secondary);
   box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -192,7 +202,7 @@
 
 .Form--Radio .Form--RadioInput + span::before,
 .Form-Checkbox .Form--CheckboxInput + span::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -205,7 +215,7 @@
 
 .Form--Radio .Form--RadioInput:checked + span::before,
 .Form-Checkbox .Form--CheckboxInput:checked + span::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -220,7 +230,7 @@
 .Form--CheckboxInput + span::after {
   transform: scale(0.5);
   transition: 0.3s ease all;
-  content: "\2713";
+  content: '\2713';
   position: absolute;
   display: block;
   top: 3px;

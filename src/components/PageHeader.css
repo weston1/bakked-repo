@@ -1,6 +1,5 @@
 .PageHeader {
-  background-color: black;
-  color: white;
+  color: var(--secondary);
   padding: 15rem 0;
 }
 
@@ -16,13 +15,14 @@
   font-size: 8rem;
   margin-bottom: 0;
   text-align: center;
-  font-family: inherit;
+  font-family: var(--font-primary);
 }
 
 .PageHeader--Subtitle {
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
+  font-family: var(--font-secondary);
 }
 
 .PageHeader .container {

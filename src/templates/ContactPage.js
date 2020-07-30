@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import PageHeader from '../components/PageHeader'
 import './ContactPage.css'
 import '../components/Form.css'
 
@@ -15,33 +16,18 @@ export const ContactPageTemplate = ({
   featuredImage,
   phone,
   email,
-  locations,
+  locations
 }) => (
   <main className="Contact">
+    <PageHeader
+      title={title}
+      subtitle={subtitle}
+      backgroundImage={featuredImage}
+    />
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
-        <h1>
-          <Content source={title} />
-        </h1>
-      </div>
-      <div className="container Contact--Section1--Container">
-        <div className="p-4 blockquote-primary">
-          <Content source={body} />
-          <div className="Contact--Details">
-            {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
-              </a>
-            )}
-            {email && (
-              <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                <Mail /> {email}
-              </a>
-            )}
-          </div>
-        </div>
         <div className="Contact-Container">
-          <div className="container">
+          <div className="col-lg-12 text-center mx-auto">
             <form
               name="contact"
               method="post"
@@ -126,7 +112,7 @@ export const ContactPageTemplate = ({
               />
               <p>
                 <button type="submit" className="Button Form--SubmitButton">
-                  Send it!
+                  SUBMIT
                 </button>
               </p>
             </form>

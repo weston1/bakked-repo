@@ -24,7 +24,7 @@ export const HomePageTemplate = ({
   section2,
   section3,
   section4,
-  featureArray,
+  featureArray
 }) => (
   <main className="Home">
     <CannabisHeader backgroundImage={featuredImage} />
@@ -135,6 +135,17 @@ export const HomePageTemplate = ({
         <Link to="/products" className="button mx-auto text-center">
           Explore All Oil Types
         </Link>
+      </div>
+    </section>
+
+    <section className="section bg-primary">
+      <div className="container">
+        <h1>What’s another email between friends?</h1>
+        <p>
+          We know what you’re thinking but we keep short &amp; sweet and won’t
+          spam your inbox. Sign-up to learn about new product releases, special
+          offers &amp; drops.
+        </p>
       </div>
     </section>
   </main>
