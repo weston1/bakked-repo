@@ -78,8 +78,8 @@
 .footer--stripes {
   background: repeating-linear-gradient(
     -70deg,
-    rgba(204, 163, 59, 1),
-    rgba(204, 163, 59, 1) 70px,
+    rgba(242, 180, 63, 1),
+    rgba(242, 180, 63, 1) 70px,
     rgba(0, 0, 0, 0) 70px,
     rgba(0, 0, 0, 0) 140px
   );

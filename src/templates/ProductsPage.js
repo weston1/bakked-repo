@@ -1,12 +1,12 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Content from "../components/Content.js";
-import Layout from "../components/Layout.js";
-import FeatureArray from "../components/FeatureArray";
-import BackgroundVideo from "../components/BackgroundVideo";
+import Content from '../components/Content.js'
+import Layout from '../components/Layout.js'
+import FeatureArray from '../components/FeatureArray'
+import BackgroundVideo from '../components/BackgroundVideo'
 
-import { Example } from "./Example";
+import { Example } from './Example'
 
 // Export Template for use in CMS preview
 export const ProductsPageTemplate = ({
@@ -17,9 +17,10 @@ export const ProductsPageTemplate = ({
   videoTitle,
   videoLogo,
   section1,
+  section2,
   bakkedImg1,
   featuredImage,
-  featureArray,
+  featureArray
 }) => (
   <main>
     <section className="BackgroundVideo-section">
@@ -32,6 +33,7 @@ export const ProductsPageTemplate = ({
         <div className="row">
           <div className="col-lg-6">
             <Content source={section1} />
+            <button className="button">Find A Dispensary</button>
           </div>
           <div className="col-lg-5">
             <img
@@ -43,17 +45,21 @@ export const ProductsPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section-motion mx-auto text-center section example-container refresh">
-      <div>
-        <h1>Motion</h1>
-      </div>
-      <div className="mx-auto">
-        <Example />
+    <section className="section bg-stripes"></section>
+    <section className="section">
+      <div className="container col-lg-10 text-center">
+        <Content source={section2} />
       </div>
     </section>
+
     <section className="section thick">
-      <div className="container">
+      <div className="container col-lg-10">
         <FeatureArray images={featureArray} />
+      </div>
+    </section>
+    <section className="section-motion mx-auto text-center section example-container refresh">
+      <div className="mx-auto">
+        <Example />
       </div>
     </section>
     <section className="BackgroundVideo-section section">
@@ -62,7 +68,7 @@ export const ProductsPageTemplate = ({
       </BackgroundVideo>
     </section>
   </main>
-);
+)
 
 const ProductsPage = ({ data: { page } }) => (
   <Layout
@@ -71,9 +77,9 @@ const ProductsPage = ({ data: { page } }) => (
   >
     <ProductsPageTemplate {...page} {...page.frontmatter} body={page.html} />
   </Layout>
-);
+)
 
-export default ProductsPage;
+export default ProductsPage
 
 export const pageQuery = graphql`
   query ProductsPage($id: String!) {
@@ -91,8 +97,9 @@ export const pageQuery = graphql`
         videoTitle
         featuredImage
         section1
+        section2
         bakkedImg1
       }
     }
   }
-`;
+`

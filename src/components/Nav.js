@@ -50,10 +50,11 @@ export class Navigation extends Component {
           </Link>
           <div className="Nav--Links">
             <NavLink to="/about/">About</NavLink>
-            <NavLink to="/products/">Products</NavLink>
+            <NavLink to="/gyro/">Gyro</NavLink>
+            <NavLink to="/dabaratus/">Dabaratus</NavLink>
             <NavLink to="/find/">Find</NavLink>
             <NavLink to="/faq/">FAQ</NavLink>
-            <NavLink to="/shop/">Shop</NavLink>
+            <NavLink to="/contact/">Future Retailer</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
           <Link to="/find" className="button--locator my-auto">

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
 @font-face {
+  font-family: 'Interstate';
+  src: url('../../static/fonts/InterstateCondensed.ttf');
+}
+@font-face {
   font-family: 'DaisyWhl';
   src: url('../../src/font/daisywhl.otf');
   font-weight: normal;
@@ -15,9 +19,8 @@
   --footerBg: #000;
   --danger: #ffc10e;
   --pageBg: #020202;
-  --font-primary: 'Open Sans Condensed', sans-serif;
+  --font-primary: 'Interstate', sans-serif;
   --font-secondary: 'DaisyWhl', serif;
-  --font-tertiary: Helvetica, serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
 }
@@ -99,10 +102,14 @@ h1 {
 }
 h2 {
   font-family: var(--font-primary);
-  font-size: 80px;
+  font-size: 120px;
   letter-spacing: 0;
-  line-height: 85px;
-  text-align: center;
+  line-height: 0.92;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: -2.38px;
 }
 
 pre {
@@ -1531,4 +1538,18 @@ blockquote {
     -webkit-transform: translateX(-110%);
     transform: translateX(-110%);
   }
+}
+.bg-stripes {
+  background: repeating-linear-gradient(
+    -70deg,
+    rgba(242, 180, 63, 1),
+    rgba(242, 180, 63, 1) 70px,
+    rgba(0, 0, 0, 0) 70px,
+    rgba(0, 0, 0, 0) 140px
+  );
+  background-color: #000;
+  transform: rotate(-3deg);
+  height: 200px;
+  position: relative;
+  overflow: hidden !important;
 }
