@@ -12,7 +12,7 @@ const RewardHeader = ({
   helloworld,
   backgroundImage,
   large,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' RewardHeader-large'
   return (
@@ -58,7 +58,7 @@ const RewardHeader = ({
 RewardHeader.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  helloworld: PropTypes.string
+  helloworld: PropTypes.string,
 }
 
 export default RewardHeader

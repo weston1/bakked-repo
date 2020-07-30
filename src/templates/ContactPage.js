@@ -1,11 +1,11 @@
-import React from "react";
-import { Smartphone, Mail } from "react-feather";
-import { graphql } from "gatsby";
+import React from 'react'
+import { Smartphone, Mail } from 'react-feather'
+import { graphql } from 'gatsby'
 
-import Content from "../components/Content";
-import Layout from "../components/Layout";
-import "./ContactPage.css";
-import "../components/Form.css";
+import Content from '../components/Content'
+import Layout from '../components/Layout'
+import './ContactPage.css'
+import '../components/Form.css'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
@@ -135,7 +135,7 @@ export const ContactPageTemplate = ({
       </div>
     </section>
   </main>
-);
+)
 
 const ContactPage = ({ data: { page } }) => (
   <Layout
@@ -144,9 +144,9 @@ const ContactPage = ({ data: { page } }) => (
   >
     <ContactPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
-);
+)
 
-export default ContactPage;
+export default ContactPage
 
 export const pageQuery = graphql`
   query ContactPage($id: String!) {
@@ -168,4 +168,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

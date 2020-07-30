@@ -24,7 +24,7 @@ export const HomePageTemplate = ({
   section2,
   section3,
   section4,
-  featureArray
+  featureArray,
 }) => (
   <main className="Home">
     <CannabisHeader backgroundImage={featuredImage} />

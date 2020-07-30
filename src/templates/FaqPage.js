@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import { graphql } from "gatsby";
+import { graphql } from 'gatsby'
 
-import PageHeader from "../components/PageHeader";
-import Layout from "../components/Layout";
-import Accordion from "../components/Accordion";
+import PageHeader from '../components/PageHeader'
+import Layout from '../components/Layout'
+import Accordion from '../components/Accordion'
 
 // Export Template for use in CMS preview
 export const FaqPageTemplate = ({ title, subtitle, accordion, body }) => (
@@ -16,7 +16,7 @@ export const FaqPageTemplate = ({ title, subtitle, accordion, body }) => (
       </div>
     </section>
   </main>
-);
+)
 
 const FaqPage = ({ data: { page } }) => (
   <Layout
@@ -25,8 +25,8 @@ const FaqPage = ({ data: { page } }) => (
   >
     <FaqPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
-);
-export default FaqPage;
+)
+export default FaqPage
 
 export const pageQuery = graphql`
   query FaqPage($id: String!) {
@@ -44,4 +44,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

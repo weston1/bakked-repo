@@ -10,7 +10,7 @@ export const RewardsPageTemplate = ({
   helloworld,
   title,
   subtitle,
-  featuredImage
+  featuredImage,
 }) => (
   <main className="RewardsPage">
     <RewardHeader

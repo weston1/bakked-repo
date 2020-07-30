@@ -22,7 +22,7 @@ export const ProductsPageTemplate = ({
   featureBlock1,
   featureBlock2,
   featuredImage,
-  featureArray
+  featureArray,
 }) => (
   <main>
     <section className="BackgroundVideo-section">

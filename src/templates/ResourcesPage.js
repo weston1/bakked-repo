@@ -11,7 +11,7 @@ export const ResourcesPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  section1
+  section1,
 }) => (
   <main>
     <FullHeader

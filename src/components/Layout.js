@@ -1,12 +1,12 @@
-import React, { Fragment } from "react";
-import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
-import Meta from "./Meta";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import React, { Fragment } from 'react'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
+import Meta from './Meta'
+import Nav from './Nav'
+import Footer from './Footer'
 
-import "modern-normalize/modern-normalize.css";
-import "./globalStyles.scss";
+import 'modern-normalize/modern-normalize.css'
+import './globalStyles.scss'
 
 export default ({ children, meta, title }) => {
   return (
@@ -38,16 +38,16 @@ export default ({ children, meta, title }) => {
           }
         }
       `}
-      render={(data) => {
+      render={data => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
             data.settingsYaml || {},
           subNav = {
-            posts: data.allPosts.hasOwnProperty("edges")
-              ? data.allPosts.edges.map((post) => {
-                  return { ...post.node.fields, ...post.node.frontmatter };
+            posts: data.allPosts.hasOwnProperty('edges')
+              ? data.allPosts.edges.map(post => {
+                  return { ...post.node.fields, ...post.node.frontmatter }
                 })
               : false,
-          };
+          }
 
         return (
           <Fragment>
@@ -82,8 +82,8 @@ export default ({ children, meta, title }) => {
 
             <Footer />
           </Fragment>
-        );
+        )
       }}
     />
-  );
-};
+  )
+}

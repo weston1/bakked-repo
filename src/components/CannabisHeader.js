@@ -11,7 +11,7 @@ const CannabisHeader = ({
   featuredLogo,
   backgroundImage,
   large,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' CannabisHeader-large'
   return (
@@ -44,7 +44,7 @@ const CannabisHeader = ({
 CannabisHeader.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  featuredLogo: PropTypes.string
+  featuredLogo: PropTypes.string,
 }
 
 export default CannabisHeader

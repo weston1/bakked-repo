@@ -1,10 +1,10 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { Link } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
-import Content from "../components/Content";
-import Layout from "../components/Layout";
-import CannabisHeader from "../components/CannabisHeader";
+import Content from '../components/Content'
+import Layout from '../components/Layout'
+import CannabisHeader from '../components/CannabisHeader'
 
 // Export Template for use in CMS preview
 export const AboutPageTemplate = ({
@@ -110,16 +110,16 @@ export const AboutPageTemplate = ({
       </Link>
     </section>
   </main>
-);
+)
 
 // Export Default AboutPage for front-end
 const AboutPage = ({ data: { page } }) => (
   <Layout meta={page.frontmatter.meta || false}>
     <AboutPageTemplate {...page} {...page.frontmatter} body={page.html} />
   </Layout>
-);
+)
 
-export default AboutPage;
+export default AboutPage
 
 export const pageQuery = graphql`
   ## Query for AboutPage data
@@ -142,4 +142,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

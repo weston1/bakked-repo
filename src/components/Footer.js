@@ -27,7 +27,8 @@ export default () => (
               <div className="col-lg-6 footer-credits">
                 <li>
                   <Link to="/gyro/">Gyro</Link>
-                </li>a
+                </li>
+                a
                 <li>
                   <Link to="/products/">Dabaratus</Link>
                 </li>

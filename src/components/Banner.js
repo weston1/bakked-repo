@@ -1,18 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Image from "./Image";
-import Content from "./Content";
-import "./Banner.css";
+import Image from './Image'
+import Content from './Content'
+import './Banner.css'
 
 const Banner = ({
   title,
   subtitle,
   backgroundImage,
   large,
-  className = "",
+  className = '',
 }) => {
-  if (large) className += " Banner-large";
+  if (large) className += ' Banner-large'
   return (
     <div className="Banner-Section">
       <div className={`Banner relative ${className}`}>
@@ -31,12 +31,12 @@ const Banner = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 Banner.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-};
+}
 
-export default Banner;
+export default Banner

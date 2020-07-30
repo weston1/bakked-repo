@@ -1,7 +1,7 @@
-import React from "react";
-import "./Logo.css";
+import React from 'react'
+import './Logo.css'
 
-export default ({ url, style, className = "", color = "#FFF" }) => (
+export default ({ url, style, className = '', color = '#FFF' }) => (
   <a
     className={`Logo ${className}`}
     href={url}
@@ -31,4 +31,4 @@ export default ({ url, style, className = "", color = "#FFF" }) => (
       />
     </svg>
   </a>
-);
+)

@@ -1,12 +1,11 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import PageHeader from "../components/PageHeader";
-import Content from "../components/Content";
-import Layout from "../components/Layout";
-import SVGIcon from "../components/SVGIcon";
-import BackgroundVideo from "../components/BackgroundVideo";
-import Video from "../components/video";
+import PageHeader from '../components/PageHeader'
+import Content from '../components/Content'
+import Layout from '../components/Layout'
+import SVGIcon from '../components/SVGIcon'
+import BackgroundVideo from '../components/BackgroundVideo'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
@@ -16,7 +15,7 @@ export const DefaultPageTemplate = ({
   body,
   video,
   videoPoster,
-  videoTitle,
+  videoTitle
 }) => (
   <main className="DefaultPage">
     <PageHeader
@@ -37,29 +36,8 @@ export const DefaultPageTemplate = ({
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
     </section>
-
-    <section className="section">
-      <div className="dark section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 py-3">
-              <Video
-                autoplay
-                playsinline
-                muted
-                loop
-                preload
-                videoSrcURL="./video/bakkedvid540.mp4"
-                videoTitle="Bakked Dabaratus"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
-);
+)
 
 const DefaultPage = ({ data: { page } }) => (
   <Layout
@@ -68,8 +46,8 @@ const DefaultPage = ({ data: { page } }) => (
   >
     <DefaultPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
-);
-export default DefaultPage;
+)
+export default DefaultPage
 
 export const pageQuery = graphql`
   query DefaultPage($id: String!) {
@@ -86,4 +64,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

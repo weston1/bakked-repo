@@ -21,7 +21,7 @@ export const CannabisPageTemplate = ({
   videoTitle,
   accordion,
   body,
-  gallery
+  gallery,
 }) => (
   <main>
     <CannabisHeader

@@ -10,7 +10,7 @@ const FullHeader = ({
   subtitle,
   backgroundImage,
   large,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' FullHeader-large'
   return (
@@ -36,7 +36,7 @@ const FullHeader = ({
 
 FullHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
 }
 
 export default FullHeader
