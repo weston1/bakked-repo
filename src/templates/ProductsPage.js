@@ -18,7 +18,9 @@ export const ProductsPageTemplate = ({
   videoLogo,
   section1,
   section2,
-  bakkedImg1,
+  section3,
+  featureBlock1,
+  featureBlock2,
   featuredImage,
   featureArray
 }) => (
@@ -37,7 +39,7 @@ export const ProductsPageTemplate = ({
           </div>
           <div className="col-lg-5">
             <img
-              src={bakkedImg1}
+              src={featureBlock1}
               alt={title}
               className="img-fluid mx-auto text-center"
             />
@@ -52,20 +54,36 @@ export const ProductsPageTemplate = ({
       </div>
     </section>
 
-    <section className="section thick">
-      <div className="container col-lg-10">
-        <FeatureArray images={featureArray} />
+    <section className="section">
+      <div className="container">
+        <div className="col-lg-6">
+          <Content source={section3} />
+        </div>
       </div>
     </section>
+
     <section className="section-motion mx-auto text-center section example-container refresh">
       <div className="mx-auto">
         <Example />
       </div>
     </section>
-    <section className="BackgroundVideo-section section">
-      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
-        {video && <source src={video} type="video/mp4" />}
-      </BackgroundVideo>
+
+    <section className="section thick">
+      <div className="container col-lg-10">
+        <FeatureArray images={featureArray} />
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="container row">
+        <h3>See How We Made</h3>
+        <div className="col-lg-6 bg-rough-y">
+          <Content source={featureBlock1} />
+        </div>
+        <div className="col-lg-6 bg-secondary">
+          <Content source={featureBlock2} />
+        </div>
+      </div>
     </section>
   </main>
 )
@@ -98,7 +116,9 @@ export const pageQuery = graphql`
         featuredImage
         section1
         section2
-        bakkedImg1
+        section3
+        featureBlock1
+        featureBlock2
       }
     }
   }

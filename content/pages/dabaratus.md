@@ -17,7 +17,14 @@ section2: >-
   ## WE DO EVERYTHING SO YOU DON’T HAVE TO DO ANYTHING
 
   Here at Bakked R&D we create solutions to dabbing problems so you can spend less time getting ready to take a dab and more time actually enjoying your dabs, without having to worry about cleaning up a mess afterwards.
-bakkedImg1: '../images/photos/dab_4x.gif'
+section3: >-
+  ### LIVE RESIN
+
+  Looking for flavor? Look no further. Live Resin is a full-spectrum, flavor-rich extract that lets you taste every flavor and feel every feeling. Live Resin is made up of terpene fractions and high-potency cannabinoid crystals.
+
+  Depending on the method used to refine the Live Resin, consistencies and ratios of terpene extract to cannabinoid crystals can vary, from Sauces (larger crystals) to Sugars (finer, sand-like consistency).
+featureBlock1: '../images/photos/dab_4x.gif'
+featureBlock2: '../images/photos/dab_4x.gif'
 featureArray:
   - alt: CONSISTENT DOSE AT THE PUSH OF A BUTTON
     image: '../images/svg/consistent.svg'
@@ -33,5 +40,5 @@ featureArray:
     subtitle: HEAT RESISTANT METAL TIP FOR DABBING
 meta:
   description: Bakked Dabaratus is the sesh without the mess. The most conventient way to take dabs. Fully activated cannabis oil.
-  title: Products
+  title: Dabaratus
 ---
