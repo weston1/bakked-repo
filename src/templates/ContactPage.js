@@ -1,13 +1,11 @@
-import React from 'react'
-import { MapPin, Smartphone, Mail } from 'react-feather'
-import { graphql } from 'gatsby'
+import React from "react";
+import { Smartphone, Mail } from "react-feather";
+import { graphql } from "gatsby";
 
-import PageHeader from '../components/PageHeader'
-import FormSimpleAjax from '../components/FormSimpleAjax'
-import Content from '../components/Content'
-import GoogleMap from '../components/GoogleMap'
-import Layout from '../components/Layout'
-import './ContactPage.css'
+import Content from "../components/Content";
+import Layout from "../components/Layout";
+import "./ContactPage.css";
+import "../components/Form.css";
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
@@ -15,34 +13,21 @@ export const ContactPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  address,
   phone,
   email,
-  locations
+  locations,
 }) => (
   <main className="Contact">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
-        <div>
+        <h1>
+          <Content source={title} />
+        </h1>
+      </div>
+      <div className="container Contact--Section1--Container">
+        <div className="p-4 blockquote-primary">
           <Content source={body} />
           <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com.au/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
-              </a>
-            )}
             {phone && (
               <a className="Contact--Details--Item" href={`tel:${phone}`}>
                 <Smartphone /> {phone}
@@ -55,16 +40,102 @@ export const ContactPageTemplate = ({
             )}
           </div>
         </div>
+        <div className="Contact-Container">
+          <div className="container">
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              {/* You still need to add the hidden input with the form name to your JSX form */}
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="py-2">
+                <label className="Form--Label">
+                  <input
+                    className="Form--Input Form--InputText"
+                    type="text"
+                    placeholder="Name*"
+                    name="firstname"
+                    required
+                  />
+                  <span>Name*</span>
+                </label>
+              </div>
 
-        <div>
-          <FormSimpleAjax name="Simple Form Ajax" />
+              <div className="py-2">
+                <label className="Form--Label">
+                  <input
+                    className="Form--Input Form--InputText"
+                    type="email"
+                    placeholder="Email*"
+                    name="emailAddress"
+                    required
+                  />
+                  <span>Email*</span>
+                </label>
+              </div>
+
+              <div className="py-2">
+                <label className="Form--Label">
+                  <input
+                    className="Form--Input Form--InputText"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    placeholder="Phone"
+                    maxLength="11"
+                    name="phone"
+                    type="tel"
+                    required
+                  />
+                  <span>#-###-###-####</span>
+                </label>
+              </div>
+
+              <div className="py-2">
+                <label className="Form--Label">
+                  <input
+                    className="Form--Input Form--InputText"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    maxLength="5"
+                    placeholder="Zip Code*"
+                    name="zip"
+                    required
+                  />
+                  <span>Zip*</span>
+                </label>
+              </div>
+              <div className="py-2">
+                <label className="Form--Label Form-Checkbox">
+                  <input
+                    className="Form--Input Form--Textarea Form--CheckboxInput"
+                    name="newsletter"
+                    type="checkbox"
+                    defaultChecked
+                    required
+                  />
+                  <span>Opt-in for emails</span>
+                </label>
+              </div>
+              <input
+                type="hidden"
+                name="form-name"
+                value="contact"
+                name="newsletter"
+              />
+              <p>
+                <button type="submit" className="Button Form--SubmitButton">
+                  Send it!
+                </button>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-
-    <GoogleMap locations={locations} />
   </main>
-)
+);
 
 const ContactPage = ({ data: { page } }) => (
   <Layout
@@ -73,9 +144,9 @@ const ContactPage = ({ data: { page } }) => (
   >
     <ContactPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
-)
+);
 
-export default ContactPage
+export default ContactPage;
 
 export const pageQuery = graphql`
   query ContactPage($id: String!) {
@@ -87,7 +158,6 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        address
         phone
         email
         locations {
@@ -98,4 +168,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

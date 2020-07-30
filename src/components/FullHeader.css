@@ -1,0 +1,58 @@
+.FullHeader {
+  background-color: transparent;
+  color: white;
+  padding: 15rem 0;
+  height: 70vh;
+}
+
+.FullHeader .BackgroundImage {
+  opacity: 0.8;
+  bottom: 0;
+  background-position: bottom center;
+  height: 100%;
+}
+
+.FullHeader-large {
+  padding: 20rem 0;
+}
+
+.FullHeader--Title {
+  font-size: 6rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: var(--font-primary);
+}
+.FullHeader--Title img {
+  width: 50%;
+  max-width: 420px;
+}
+
+.FullHeader--Subtitle {
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-family: var(--font-secondary);
+}
+.FullHeader--Helloworld {
+  margin: 3rem 0;
+  width: 100%;
+  max-width: 700px;
+}
+.FullHeader--Subtitle img {
+  width: 50%;
+}
+
+.FullHeader .container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 600px) {
+  .FullHeader {
+    padding: 7rem 0;
+  }
+  .FullHeader-large {
+    padding: 12.5rem 0;
+  }
+}

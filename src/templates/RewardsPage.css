@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Varela+Round&display=swap');
+
+.loil-header {
+  text-transform: lowercase;
+  font-family: 'Varela Round', 'Forza', sans-serif;
+  font-size: 36px;
+}
+.loil-subheader {
+  font-family: 'Varela Round', 'Forza', sans-serif;
+  font-size: 26px;
+}
+.loil-text p {
+  font-family: 'Nunito', 'Forza', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  margin-top: -1em;
+}
+.how-to-text p {
+  color: #6a6a6a;
+  font-family: 'Nunito', 'Forza', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  margin-top: 1em;
+}
+.offers-text {
+  color: #ffffff !important;
+  max-width: 400px;
+}
+.offers-text-container {
+  width: 200px;
+}
+.rewards-text {
+  color: #ffffff;
+}
+.step-text {
+  height: 200px;
+}
+.step-img {
+  padding: 10px 0;
+}
+.loil-bg {
+  background: url('/images/bg/bg-01.jpg');
+  background-size: 100% auto;
+  background-position: center center;
+  z-index: -1;
+  min-height: 400px;
+  opacity: 0.5;
+}
+.earn-bg {
+  background: url('/images/loil/earnfaster-bg@2x.jpg');
+  background-size: 100% 100%;
+}
+.loil-card {
+  background: white;
+  color: black;
+  box-shadow: 0px 2px 20px 0px rgba(141, 141, 141, 0.8);
+  padding: 1rem;
+  margin: 2rem;
+  width: 25%;
+  border-radius: var(--borderRadius);
+  min-width: 300px;
+  transition: 0.3s ease all;
+}
+.loil-card:hover {
+  box-shadow: 0px 5px 25px 5px rgba(141, 141, 141, 0.8);
+}
+.loil-card h4 {
+  width: 304px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 5px;
+}
+.loil-card p {
+  height: 49px;
+  width: 304px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 34px;
+}
+.lb {
+  white-space: nowrap;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.lb:hover {
+  opacity: 0.8;
+  box-shadow: 1px 1px 2px rgba(141, 141, 141, 0.3);
+}
+.loil-button {
+  width: 334px;
+  height: 62px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #012d1e;
+}
+.loil-button-white {
+  width: 243px;
+  height: 62px;
+  border-radius: 33px;
+  color: #000000;
+  font-family: 'Nunito', 'Forza', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #ffffff;
+  padding: 1em 2em;
+}
+.loil-button-mini {
+  width: 131px;
+  height: 37px;
+  border-radius: 50px;
+  background-color: #58b956;
+  color: #000000;
+  font-weight: 800;
+  border: none;
+  margin: 0 0 2em 0;
+}
+.loil-button-simple {
+  width: 150px;
+  height: 62px;
+  font-family: 'Nunito', 'Forza', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: normal;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #ffffff;
+}
+.loil-brands {
+  width: 68px;
+  height: 57px;
+  object-fit: contain;
+}
+.offer-img-container {
+  overflow: hidden;
+  width: 100%;
+  height: 641px;
+  color: #ffffff;
+}
+.offer-img:nth-child(n + 1) {
+  background: url('/images/loil/offer-image@2x.jpg');
+  background-size: 102%;
+}
+.offer-img:nth-child(n + 2) {
+  background: url('/images/loil/product-image@2x.jpg');
+  background-size: cover;
+}
+.offer-img:nth-child(n + 3) {
+  background: url('/images/loil/gear-image@2x.jpg');
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  .offer-img-container {
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    color: #ffffff;
+  }
+  .step-text {
+    height: auto;
+  }
+  .step-img {
+    max-height: 250px;
+    margin-bottom: 2em;
+  }
+}

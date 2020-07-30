@@ -1,11 +1,11 @@
 .PageHeader {
-  background-color: var(--darkGrey);
+  background-color: black;
   color: white;
   padding: 15rem 0;
 }
 
 .PageHeader .BackgroundImage {
-  opacity: 0.8;
+  opacity: 0.99;
 }
 
 .PageHeader-large {
@@ -13,13 +13,16 @@
 }
 
 .PageHeader--Title {
-  font-size: 6rem;
+  font-size: 8rem;
   margin-bottom: 0;
+  text-align: center;
+  font-family: inherit;
 }
 
 .PageHeader--Subtitle {
   font-weight: 400;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .PageHeader .container {

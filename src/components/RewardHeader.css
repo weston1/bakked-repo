@@ -1,0 +1,84 @@
+.RewardHeader {
+  color: black;
+  font-family: 'Nunito', 'Forza', sans-serif;
+  padding: 12vh;
+  width: 100vw;
+  top: 0;
+}
+
+.RewardHeader .BackgroundImage {
+  top: 0;
+  width: 100%;
+  background-position: top center;
+}
+
+.RewardHeader-large {
+  padding: 20rem 0;
+}
+
+.RewardHeader--Title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 0.9;
+  color: #ffffff;
+  max-width: 500px;
+}
+.RewardHeader--Title img {
+  width: 50%;
+  max-width: 500px;
+}
+
+.RewardHeader--Subtitle {
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: left;
+  color: white;
+}
+.RewardHeader--Helloworld {
+  margin: 3rem 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.RewardHeader .container {
+  animation: fadeIn 0.5s ease-out;
+}
+.Button {
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 2rem 4rem;
+  border: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+}
+.Button:hover,
+.Button:focus {
+  opacity: 0.95;
+  outline: none;
+  background: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .RewardHeader {
+    padding: 7rem 0;
+    overflow: hidden;
+  }
+  .RewardHeader-large {
+    padding: 12.5rem 0;
+  }
+  .RewardHeader .BackgroundImage {
+    height: 100%;
+    background-position: center;
+  }
+  .RewardHeader--Helloworld {
+    margin: 3rem 0;
+    width: 100%;
+    max-width: 300px;
+  }
+}

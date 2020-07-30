@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+
 .Accordion {
+  font-family: "Open Sans Condensed", sans-serif;
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -15,25 +18,34 @@
 
 .Accordion--item {
   position: relative;
-  padding: 3rem;
-  background: white;
+  padding: 1rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
+  border: 3px solid white;
   box-shadow: 0px 2px 25px 0px rgba(84, 131, 157, 0.2);
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+.Accordion--item:hover {
+  border: 3px solid var(--primary);
+  color: var(--primary);
   cursor: pointer;
 }
 
 .Accordion--item h2 {
   cursor: pointer;
   display: block;
+  color: white !important;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
   font-weight: bold;
   pointer-events: none;
 }
-
+.text-white {
+  color: white !important;
+}
 .Accordion--item svg {
   float: right;
   transition: ease all 0.3s;
@@ -48,6 +60,7 @@
   opacity: 0;
   transition: ease all 0.3s;
   max-height: 0;
+  font-family: var(--font-tertiary);
 }
 
 .Accordion--item.active .description {

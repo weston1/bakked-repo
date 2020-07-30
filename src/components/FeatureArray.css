@@ -1,0 +1,80 @@
+.FeatureArray {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.logo-image-partners {
+  width: 100px !important;
+  height: auto;
+}
+.FeatureArray figcaption {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 300px;
+}
+.FeatureArray p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  color: #cacaca !important;
+  padding: 1rem 0.3rem;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+  .FeatureArray {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.FeatureArray--Item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 5rem);
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 750px) {
+  .FeatureArray--Item {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
+
+.FeatureArray--Item > div {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+}
+
+.FeatureArray--Item figcaption {
+  text-align: center;
+}
+
+@supports (object-fit: contain) {
+  .FeatureArray--Item img {
+    position: relative;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    max-width: 200px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: white;
+  }
+  .FeatureArray--Item--border img {
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+}

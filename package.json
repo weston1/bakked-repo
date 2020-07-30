@@ -1,15 +1,16 @@
 {
-  "name": "yellowcake",
-  "HomePage": "https://yellowcake.netlify.com/",
-  "description": "An opinionated starter project for creating lightning-fast websites with Gatsby v2 and Netlify CMS v2",
+  "name": "bakked",
+  "HomePage": "https://bakked.com/",
+  "description": "Bakked",
   "version": "2.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thriveweb/yellowcake"
+    "url": "https://github.com/weston1/bakked-repo"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "dom-form-serializer": "^1.0.7",
+    "framer-motion": "^2.3.0",
     "gatsby": "^2.17.7",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-google-tagmanager": "^2.1.15",

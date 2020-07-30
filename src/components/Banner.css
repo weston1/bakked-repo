@@ -1,0 +1,62 @@
+.Banner-Section {
+  height: 200px;
+  overflow: hidden !important;
+}
+.Banner {
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+  transform: rotate(-3deg);
+  width: 150%;
+  left: -200px;
+  position: absolute;
+  margin-top: -150px;
+  overflow: hidden !important;
+}
+.Banner-Stripes {
+  background: repeating-linear-gradient(
+    60deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 70px,
+    rgba(0, 0, 0, 0) 70px,
+    rgba(0, 0, 0, 0) 140px
+  );
+  margin: 3rem 0;
+  height: 200px;
+  overflow: hidden !important;
+}
+
+.Banner .BackgroundImage {
+  opacity: 0.99;
+}
+
+.Banner-large {
+  padding: 20rem 0;
+}
+
+.Banner--Title {
+  font-size: 8rem;
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: inherit;
+}
+
+.Banner--Subtitle {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.Banner .container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 600px) {
+  .Banner {
+    padding: 7rem 0;
+  }
+  .Banner-large {
+    padding: 12.5rem 0;
+  }
+}

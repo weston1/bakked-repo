@@ -1,10 +1,11 @@
 ---
 template: BlogIndex
-slug: blog
-title: Blog Page
-featuredImage: 'https://ucarecdn.com/b6254577-26bf-4b79-aa9b-f3793e2aebdc/'
-subtitle: This is the blog page subtitle.
+slug: articles
+title: Projects
+featuredImage: >-
+  https://images.unsplash.com/photo-1567965606933-c46e07393d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+subtitle: Find my most recent work here.
 meta:
-  description: This is a meta description.
-  title: Blog Page
+  description: Bakked News
+  title: Blog
 ---

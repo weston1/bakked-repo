@@ -13,10 +13,11 @@
   align-items: center;
   justify-content: center;
   transition: 1s ease all;
+  filter: saturate(0.1);
 }
 
 .InstagramFeed--EmptyPost:hover {
-  opacity: 0.8;
+  filter: none;
 }
 
 @media screen and (max-width: 1120px) {

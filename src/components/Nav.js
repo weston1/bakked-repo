@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Location } from '@reach/router'
 import { Link } from 'gatsby'
-import { Menu, X } from 'react-feather'
+import { Menu, X, MapPin } from 'react-feather'
 import Logo from './Logo'
 
-import './Nav.css'
+import './Nav.scss'
 
 export class Navigation extends Component {
   state = {
@@ -49,48 +49,22 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/components/">Components</NavLink>
-            <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'posts' ? 'active' : ''
-              }`}
-            >
-              <span
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
-                    ? 'active'
-                    : ''
-                }`}
-                onClick={() => this.toggleSubNav('posts')}
-              >
-                Blog
-                <div className="Nav--GroupLinks">
-                  <NavLink to="/blog/" className="Nav--GroupLink">
-                    All Posts
-                  </NavLink>
-                  {subNav.posts.map((link, index) => (
-                    <NavLink
-                      to={link.slug}
-                      key={'posts-subnav-link-' + index}
-                      className="Nav--GroupLink"
-                    >
-                      {link.title}
-                    </NavLink>
-                  ))}
-                </div>
-              </span>
-            </div>
-            <NavLink to="/default/">Default</NavLink>
+            <NavLink to="/about/">About</NavLink>
+            <NavLink to="/products/">Products</NavLink>
+            <NavLink to="/find/">Find</NavLink>
+            <NavLink to="/faq/">FAQ</NavLink>
+            <NavLink to="/shop/">Shop</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
+          <Link to="/find" className="button--locator my-auto">
+            <MapPin size="20px" />
+            &nbsp;STORE LOCATOR
+          </Link>
           <button
-            className="Button-blank Nav--MenuButton"
+            className="Button-blank Nav--MenuButton hamburger"
             onClick={this.handleMenuToggle}
           >
-            {active ? <X /> : <Menu />}
+            {active ? <X size="3rem" /> : <Menu size="3rem" />}
           </button>
         </div>
       </nav>
