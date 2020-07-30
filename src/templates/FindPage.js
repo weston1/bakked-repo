@@ -9,8 +9,13 @@ import './ContactPage.css'
 
 // Export Template for use in CMS preview
 // < Mapbox / > USE FOR MAPBOX PLUGIN
-export const FindPageTemplate = ({ body, title, subtitle, featuredImage }) => (
+export const FindPageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Contact">
+    <PageHeader
+      title={title}
+      subtitle={subtitle}
+      backgroundImage={featuredImage}
+    />
     <section className="Find-Card-Overlay">
       <div className="container">
         <div className="Find-Card">

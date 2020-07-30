@@ -3,6 +3,7 @@ template: FindPage
 slug: find
 title: Get Bakked
 subtitle: Find A Location Near You.
+featuredImage: '../images/loil/home-masthead@2x.jpg'
 meta:
   description: Find Bakked locations here.
   title: Find
