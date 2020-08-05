@@ -6,12 +6,13 @@ import { useDimensions } from './use-dimensions'
 import { MenuToggle } from './MenuToggle'
 import { Navigation } from './Navigation'
 import { MapPin } from 'react-feather'
+import Logo from './Logo'
 
 import './Menu.css'
 
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at -40px -40px)`,
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
       type: 'spring',
       stiffness: 20,
@@ -19,7 +20,7 @@ const sidebar = {
     }
   }),
   closed: {
-    clipPath: 'circle(30px at 40px 40px)',
+    clipPath: 'circle(30px at 600px 1000px)',
     transition: {
       delay: 0.5,
       type: 'spring',
@@ -50,6 +51,9 @@ export const Menu = () => {
         >
           <motion.div className="background" variants={sidebar} />
           <Navigation />
+          <div>
+            <Logo />
+          </div>
           <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
       </div>

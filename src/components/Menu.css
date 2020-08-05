@@ -10,12 +10,9 @@
   display: flex;
   align-items: center;
   height: 7rem;
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
+  text-transform: uppercase;
 }
-.Nav--Links {
-  display: inline-flex;
-}
-
 .background {
   position: fixed;
   right: 0;
@@ -25,7 +22,6 @@
   height: 100vh;
   background: var(--secondary);
   z-index: 100;
-  transform: rotate(180deg);
 }
 
 .Menu--Button {
@@ -38,10 +34,10 @@
   position: absolute;
   top: 18px;
   right: 15px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background: transparent;
+  background: black;
   z-index: 999;
 }
 
@@ -56,8 +52,8 @@ ul {
   padding: 25px;
   position: absolute;
   top: 100px;
-  right: 20%;
-  width: 200px;
+  right: 25vw;
+  width: 300px;
 }
 
 li {
@@ -66,6 +62,13 @@ li {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.Page--Title {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  line-height: 1.1;
 }
 
 .MenuItem-Icon {
@@ -124,7 +127,6 @@ li {
     height: 100vh;
     background: var(--secondary);
     z-index: 100;
-    transform: rotate(180deg);
   }
 
   .Menu--Button {
@@ -138,18 +140,21 @@ li {
     top: 90vh;
     bottom: 0;
     right: 15px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background: transparent;
+    background: black;
     z-index: 999;
   }
   .Find--Button {
-    width: 100%;
-    position: absolute;
+    width: 50vw;
+    position: fixed;
     margin: 0 auto;
+    left: 0;
+    right: 0;
     z-index: 50;
     bottom: 0;
+    text-align: center;
   }
   ul {
     width: 50%;

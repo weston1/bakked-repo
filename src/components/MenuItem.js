@@ -20,7 +20,7 @@ const variants = {
   }
 }
 
-const colors = ['#fdb000', '#fdb000', '#fdb000', '#fcc000', '#fff000']
+const colors = ['#fdb000', '#DC9B00', '#CB8F00', '#A77600', '#8B6200']
 const pages = ['/', '/gyro', '/dabaratus', '/find', '/contact']
 const pagesTitle = ['Home', 'Gyro', 'Dabaratus', 'Find', 'Contact']
 const listClass = ['Menu--ul', 'Menu--ul', 'Menu--ul', 'Menu--ul', 'Menu--ul']
@@ -35,9 +35,10 @@ export const MenuItem = ({ i }) => {
         whileTap={{ scale: 0.95 }}
         className={listClass[i]}
       >
+        <Droplet className="MenuItem-Icon" color={colors[i]} />
+
         <Link to={pages[i]}>
-          <Droplet className="MenuItem-Icon" color={colors[i]} />
-          <p className="my-auto">{pagesTitle[i]}</p>
+          <p className="my-auto Page--Title">{pagesTitle[i]}</p>
         </Link>
       </motion.li>
     </div>
