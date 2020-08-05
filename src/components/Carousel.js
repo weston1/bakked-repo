@@ -106,7 +106,7 @@ const Carousel = ({ title, subtitle, backgroundImage, className = '' }) => {
 
 Carousel.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
 }
 
 export default Carousel

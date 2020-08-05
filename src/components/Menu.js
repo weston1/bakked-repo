@@ -16,8 +16,8 @@ const sidebar = {
     transition: {
       type: 'spring',
       stiffness: 20,
-      restDelta: 2
-    }
+      restDelta: 2,
+    },
   }),
   closed: {
     clipPath: 'circle(30px at 600px 1000px)',
@@ -25,9 +25,9 @@ const sidebar = {
       delay: 0.5,
       type: 'spring',
       stiffness: 400,
-      damping: 40
-    }
-  }
+      damping: 40,
+    },
+  },
 }
 
 export const Menu = () => {

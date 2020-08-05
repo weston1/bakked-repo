@@ -22,7 +22,7 @@ export const ProductsPageTemplate = ({
   bakkedImg3,
   featureBlock1,
   featureBlock2,
-  featureArray
+  featureArray,
 }) => (
   <main>
     <section className="BackgroundVideo-section">

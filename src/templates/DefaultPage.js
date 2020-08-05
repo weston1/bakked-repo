@@ -15,7 +15,7 @@ export const DefaultPageTemplate = ({
   body,
   video,
   videoPoster,
-  videoTitle
+  videoTitle,
 }) => (
   <main className="DefaultPage">
     <PageHeader

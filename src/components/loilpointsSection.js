@@ -11,7 +11,7 @@ const loilpointsSection = ({
   featuredLogo,
   backgroundImage,
   large,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' loilpointsSection-large'
   return (
@@ -44,7 +44,7 @@ const loilpointsSection = ({
 loilpointsSection.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  featuredLogo: PropTypes.string
+  featuredLogo: PropTypes.string,
 }
 
 export default loilpointsSection
