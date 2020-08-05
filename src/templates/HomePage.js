@@ -3,10 +3,10 @@ import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 
 import CannabisHeader from '../components/CannabisHeader'
-import Banner from '../components/Banner'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import FeatureArray from '../components/FeatureArray'
+import FormSimple from '../components/FormSimple'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
@@ -51,11 +51,18 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <section className="section Banner-Container">
-      <h1 className="Banner-Scroll">
-        <span>&#9762;</span> LETS #GETBAKKED <span>&#9762;</span> LETS
-        #GETBAKKED <span>&#9762;</span> LETS #GETBAKKED
-      </h1>
+    <section class="Marquee--Section">
+      <div class="Marquee--Inner">
+        <h3 className="Marquee--Item">
+          001 100 0 010 100101 00 010 00 1 001 100 0 010 100101 00 010 00 1 001
+          100 0 010 100101 00 010 00 1 001 100 0 010 100101 00 010 00 1 001 100
+          0 010 100101 00 010 00 1
+        </h3>
+        <h3 className="Marquee--Item">
+          <span>&#9762;</span> LETS #GETBAKKED <span>&#9762;</span> LETS
+          #GETBAKKED <span>&#9762;</span> LETS #GETBAKKED
+        </h3>
+      </div>
     </section>
 
     <section className="section bg-primary bg-rough">
@@ -85,7 +92,9 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
-
+    <section className="section bg-primary">
+      <div className="container breaker">&nbsp;</div>
+    </section>
     <section className="section bg-primary">
       <div className="container">
         <div className="row">
@@ -118,34 +127,43 @@ export const HomePageTemplate = ({
     </section>
 
     <section className="section bg-primary">
-      <Banner className="Banner-Stripes" />
+      <Content className="Banner-Stripes" />
     </section>
 
     <section className="section">
-      <div className="col-lg-5 mx-auto py-4">
-        <h1>EXTRACT TYPES</h1>
-      </div>
-      <div className="container mx-auto text-center">
-        <FeatureArray
-          images={featureArray}
-          className="container mx-auto text-center"
-        />
-        <Content source={section4} className="mx-auto text-center" />
+      <div className="text-center mx-auto py-4">
+        <h2>EXTRACT TYPES</h2>
+        <div className="container mx-auto text-center">
+          <FeatureArray
+            images={featureArray}
+            className="container mx-auto text-center"
+          />
+          <Content source={section4} className="mx-auto text-center" />
 
-        <Link to="/products" className="button mx-auto text-center">
-          Explore All Oil Types
-        </Link>
+          <Link to="/products" className="button mx-auto text-center">
+            Explore All Oil Types
+          </Link>
+        </div>
       </div>
     </section>
 
-    <section className="section bg-primary">
+    <section className="section">
       <div className="container">
-        <h1>What’s another email between friends?</h1>
-        <p>
-          We know what you’re thinking but we keep short &amp; sweet and won’t
-          spam your inbox. Sign-up to learn about new product releases, special
-          offers &amp; drops.
-        </p>
+        <Content source={section4} className="mx-auto text-center" />
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="container">
+        <div className="col-lg-10 mx-auto text-center">
+          <h1>What’s another email between friends?</h1>
+          <p>
+            We know what you’re thinking but we keep short &amp; sweet and won’t
+            spam your inbox. Sign-up to learn about new product releases,
+            special offers &amp; drops.
+          </p>
+          <FormSimple />
+        </div>
       </div>
     </section>
   </main>

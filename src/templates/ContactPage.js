@@ -1,8 +1,6 @@
 import React from 'react'
-import { Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
-import Content from '../components/Content'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import './ContactPage.css'
@@ -13,10 +11,7 @@ export const ContactPageTemplate = ({
   body,
   title,
   subtitle,
-  featuredImage,
-  phone,
-  email,
-  locations
+  featuredImage
 }) => (
   <main className="Contact">
     <PageHeader

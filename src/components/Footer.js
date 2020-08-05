@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import FormMini from './FormMini'
+
 import './Footer.css'
 import { Instagram, Facebook, MessageCircle } from 'react-feather'
 
@@ -8,7 +10,7 @@ export default () => (
     <div className="footerNav">
       <div className="footerNavBorder container">
         <div className="row brandLogo">
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <img
               src="../images/logos/bakked_logo.png"
               alt="Bakked"
@@ -18,7 +20,7 @@ export default () => (
           <div className="col-lg-4 col-6">
             <h4>Subscribe</h4>
             <div className="col-lg-3 mb-auto py-3">
-              <input name="form-name" value="contact" name="newsletter" />
+              <FormMini />
             </div>
           </div>
           <div className="col-lg-4 col-6">
@@ -67,6 +69,17 @@ export default () => (
               </div>
             </div>
           </div>
+          <div className="col-lg-12">
+            <p className="footer-credits">
+              Order now in CA CO &amp; OR
+              <img
+                src="../images/logos/leaflink.svg"
+                alt="Leaflink"
+                className="img-fluid my-auto"
+                width="150px"
+              />
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -98,7 +111,7 @@ export default () => (
           </li>
           <li>
             <img
-              src="../images/logos/bakked_logo.png"
+              src="../images/logos/slang.svg"
               className="img-fluid"
               width="100px"
             />

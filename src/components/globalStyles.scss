@@ -25,23 +25,8 @@
   --borderRadius: 3px;
 }
 
-::-webkit-scrollbar {
-  width: 0.2rem;
-  z-index: 1;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 3px var(--darkGrey);
-  box-shadow: inset 0 0 3px var(--darkGrey);
-  background: black;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-}
-
 ::selection {
-  background: rgba(123, 144, 133, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 html {
@@ -153,6 +138,11 @@ blockquote {
 }
 
 /* Utility Classes */
+.breaker {
+  height: 2px;
+  width: 100%;
+  background-color: white !important;
+}
 .light {
   background-color: var(--lightGrey);
 }
@@ -1308,7 +1298,7 @@ blockquote {
   font-size: 1.4rem;
   font-family: var(--font-secondary);
   display: inline-block;
-  padding: 1.25rem 3rem;
+  padding: 1.5rem 3rem;
   margin: 0.2rem 0.5rem 0.2rem 0;
   border: none;
   transition: all 0.3s ease;
@@ -1494,6 +1484,61 @@ blockquote {
   background-position: left center;
   z-index: -1;
 }
+
+/* Product List */
+.product-list ul li {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+  font-size: 22px;
+  line-height: 40px;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  letter-spacing: -0.81px;
+  border-bottom: solid 2px #000;
+  width: 300px;
+}
+
+/* Marquee */
+
+.Marquee--Section {
+  position: relative;
+  clip-path: inset(0%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: var(--pageBg);
+  color: white;
+  border-top: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+  padding: 0;
+  transition: background-color 0.3s ease-in-out;
+  user-select: none;
+  overflow: hidden;
+  z-index: 3;
+}
+.Marquee--Section:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.Marquee--Inner {
+  transform: translate3d(-44.363px, 0px, 0px);
+  white-space: nowrap;
+  display: flex;
+}
+.Marquee--Item {
+  position: relative;
+  display: block;
+  font-size: 4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: color 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  margin-bottom: 0;
+  padding: 3rem 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+
 .Banner-Container {
   width: 120%;
   background-color: #000 !important;
@@ -1538,6 +1583,21 @@ blockquote {
     -webkit-transform: translateX(-110%);
     transform: translateX(-110%);
   }
+}
+.product-stripes {
+  background: repeating-linear-gradient(
+    -70deg,
+    rgba(242, 180, 63, 0),
+    rgba(242, 180, 63, 0) 70px,
+    rgba(0, 0, 0, 0) 70px,
+    rgba(0, 0, 0, 0) 140px
+  );
+  background-color: #000;
+  transform: rotate(-3deg);
+  height: 200px;
+  position: fixed;
+  z-index: 3;
+  overflow: hidden !important;
 }
 .bg-stripes {
   background: repeating-linear-gradient(

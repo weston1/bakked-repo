@@ -32,10 +32,12 @@ videoSourceURL: '../video/bakkedvid540.mp4'
 
 featureArray:
   - alt: Live Resin
-    image: '../images/svg/bowl.svg'
+    image: '../images/photos/resin.png'
+    sticker: '../images/photos/resin.png'
     title: LIVE RESIN
   - alt: HIGH TERPENE EXTRACT
-    image: '../images/svg/blunt.svg'
+    image: '../images/photos/petri.png'
+    sticker: '../images/photos/petri.png'
     title: HIGH TERPENE EXTRACT
 meta:
   description: High Quality Cannabis Concentrates. Sesh Without The Mess.

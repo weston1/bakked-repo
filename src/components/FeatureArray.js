@@ -14,6 +14,7 @@ export const query = graphql`
       featureArray {
         alt
         image
+        sticker
         title
         subtitle
       }
@@ -26,7 +27,7 @@ export default class FeatureArray extends Component {
     loaded: false,
     isOpen: false,
     sliderImages: [],
-    index: 0,
+    index: 0
   }
 
   isOpen(isOpen, index) {
@@ -45,10 +46,10 @@ export default class FeatureArray extends Component {
             title: img.title,
             subtitle: img.subtitle,
             w: result.width,
-            h: result.height,
+            h: result.height
           }
           this.setState({
-            sliderImages: newImagesArr,
+            sliderImages: newImagesArr
           })
           return true
         },
@@ -91,6 +92,14 @@ export default class FeatureArray extends Component {
                     className="img-fluid logo-image-partners"
                   />
                 </div>
+                <div>
+                  <Image
+                    resolutions="small"
+                    src={image.sticker}
+                    alt={image.alt}
+                    className="img-fluid logo-image-partners"
+                  />
+                </div>
                 {image.title && (
                   <figcaption className="mx-auto">{image.title}</figcaption>
                 )}
@@ -107,5 +116,5 @@ export default class FeatureArray extends Component {
 }
 
 FeatureArray.propTypes = {
-  images: PropTypes.array.isRequired,
+  images: PropTypes.array.isRequired
 }

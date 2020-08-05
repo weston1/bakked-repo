@@ -1,7 +1,7 @@
 ---
 template: ProductsPage
 slug: gyro
-title:
+title: Gyro
 featuredImage: '../images/photos/about-img-2.jpg'
 subtitle:
 
@@ -24,14 +24,16 @@ section2: >-
 
   Here at Bakked R&D we create solutions to dabbing problems so you can spend less time getting ready to take a dab and more time actually enjoying your dabs, without having to worry about cleaning up a mess afterwards.
 section3: >-
-  ### LIVE RESIN
+  ## LIVE RESIN
 
   Looking for flavor? Look no further. Live Resin is a full-spectrum, flavor-rich extract that lets you taste every flavor and feel every feeling. Live Resin is made up of terpene fractions and high-potency cannabinoid crystals.
 
   Depending on the method used to refine the Live Resin, consistencies and ratios of terpene extract to cannabinoid crystals can vary, from Sauces (larger crystals) to Sugars (finer, sand-like consistency).
-bakkedImg1: '../images/photos/dab_4x.gif'
-featureBlock1: '../images/photos/dab_4x.gif'
-featureBlock2: '../images/photos/dab_4x.gif'
+bakkedImg1: '../images/photos/gyro-product.png'
+bakkedImg2: '../images/photos/live-resin-lockup.png'
+bakkedImg3: '../images/photos/live-resin-lockup.png'
+featureBlock1: '../images/photos/gyro-product.png'
+featureBlock2: '../images/photos/gyro-product.png'
 featureArray:
   - alt: CONSISTENT DOSE AT THE PUSH OF A BUTTON
     image: '../images/svg/consistent.svg'
