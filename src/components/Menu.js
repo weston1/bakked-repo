@@ -37,7 +37,7 @@ export const Menu = () => {
   return (
     <div className="Menu">
       <div className="Menu--Container">
-        <Link to="/find" className="button--locator my-auto">
+        <Link to="/find" className="Find--Button button--locator my-auto">
           <MapPin size="20px" />
           &nbsp;STORE LOCATOR
         </Link>
