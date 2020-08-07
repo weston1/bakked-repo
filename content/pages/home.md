@@ -23,6 +23,10 @@ section3: >-
   The name says it all - the ultimate dabbing apparatus, that you can ooze anywhere. This swiss-army knife of dabbing that can be used to top a bowl, line a blunt, dress a joint or dab directly onto a nail. Just click, apply & cap to #seshwithoutthemess.
 section4: >-
   TESTING IN SESSION: DIAMONDS, ROSIN & LIVE BUDDER
+section5: >-
+  # #GetBakked at retail dispensaries
+
+  throughout california, Colorado, Oregon, New Mexico, Maine & Vermont.
 
 video: '../video/bakkedvid540.mp4'
 videoLogo: '../images/logo-y.svg'
@@ -33,12 +37,12 @@ videoSourceURL: '../video/bakkedvid540.mp4'
 featureArray:
   - alt: Live Resin
     image: '../images/photos/resin.png'
-    sticker: '../images/photos/resin.png'
-    title: LIVE RESIN
+    sticker: '../images/photos/stickers/live-resin.png'
+    title: available in the gyro
   - alt: HIGH TERPENE EXTRACT
     image: '../images/photos/petri.png'
-    sticker: '../images/photos/petri.png'
-    title: HIGH TERPENE EXTRACT
+    sticker: '../images/photos/stickers/high-terpene-extract.png'
+    title: available in the DABARATUS
 meta:
   description: High Quality Cannabis Concentrates. Sesh Without The Mess.
   title: Bakked

@@ -24,12 +24,13 @@ export const HomePageTemplate = ({
   section2,
   section3,
   section4,
+  section5,
   featureArray,
 }) => (
   <main className="Home">
     <CannabisHeader backgroundImage={featuredImage} />
 
-    <section className="section row">
+    <section className="section thick row">
       <div className="col-lg-2">
         <img src={sticker1} alt={title} className="sticker sticker-header-1" />
       </div>
@@ -41,11 +42,11 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <section className="section">
+    <section className="section thick bg-dusty">
       <div className="container">
         <Content
           source={section1}
-          className="col-lg-10 text-center mx-auto reveal-from-bottom"
+          className="col-lg-9 text-center mx-auto reveal-from-bottom"
           data-reveal-delay="200"
         />
       </div>
@@ -65,10 +66,10 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <section className="section bg-primary bg-rough">
+    <section className="section bg-primary-dusty">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-5 p-5">
+        <div className="row col-lg-10 mx-auto">
+          <div className="col-lg-6 p-3">
             <img
               src={bakkedImg1}
               alt={title}
@@ -88,6 +89,16 @@ export const HomePageTemplate = ({
               alt={title}
               className="img-fluid mx-auto text-center"
             />
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 mx-auto">
+            <img src={sticker1} alt={title} className="sticker" />
+          </div>
+          <div className="col-lg-4 mx-auto">
+            <img src={sticker3} alt={title} className="sticker " />
           </div>
         </div>
       </div>
@@ -126,11 +137,9 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <section className="section bg-primary">
-      <Content className="Banner-Stripes" />
-    </section>
+    <section className="section bg-stripes"></section>
 
-    <section className="section">
+    <section className="section thick">
       <div className="text-center mx-auto py-4">
         <h2>EXTRACT TYPES</h2>
         <div className="container mx-auto text-center">
@@ -141,7 +150,7 @@ export const HomePageTemplate = ({
           <Content source={section4} className="mx-auto text-center" />
 
           <Link to="/products" className="button mx-auto text-center">
-            Explore All Oil Types
+            Explore Oil Types
           </Link>
         </div>
       </div>
@@ -149,7 +158,10 @@ export const HomePageTemplate = ({
 
     <section className="section">
       <div className="container">
-        <Content source={section4} className="mx-auto text-center" />
+        <Content source={section5} className="col-lg-10 mx-auto text-center" />
+        <Link to="/products" className="button mx-auto text-center">
+          FIND A DISPENSARY
+        </Link>
       </div>
     </section>
 
@@ -203,6 +215,7 @@ export const pageQuery = graphql`
         section2
         section3
         section4
+        section5
       }
     }
   }

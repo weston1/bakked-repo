@@ -136,6 +136,14 @@ blockquote {
   background-color: #000;
   color: #fff;
 }
+ul {
+  list-style-type: none;
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 3rem;
+  padding-inline-start: 0px;
+}
 
 /* Utility Classes */
 .breaker {
@@ -1368,6 +1376,7 @@ blockquote {
 .sticker {
   transition: all 0.3s ease-in-out;
   opacity: 0.9;
+  max-width: 200px;
 }
 .sticker:hover {
   transform: translate(-10%, -5%);
@@ -1473,16 +1482,22 @@ blockquote {
 
 .bg-primary {
   background-color: var(--primary);
-  z-index: -2;
+  z-index: 1;
+}
+.bg-primary-dusty {
+  background: url('../../static/images/bg/stardust.png'), var(--primary);
+  background-size: 300px auto;
+  background-position: top right;
+  background-repeat: repeat;
 }
 .bg-secondary {
   background-color: var(--secondary);
 }
-.bg-rough-y {
-  background: url('../../static/images/photos/Dust.png'), var(--primary);
-  background-size: 100%;
-  background-position: left center;
-  z-index: -1;
+.bg-dusty {
+  background: url('../../static/images/bg/stardust.png'), transparent;
+  background-size: 300px auto;
+  background-position: top right;
+  background-repeat: repeat;
 }
 
 /* Product List */
