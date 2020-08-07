@@ -1499,6 +1499,30 @@ blockquote {
   background-position: top right;
   background-repeat: repeat;
 }
+.bg-product-stripes {
+  background: url('../../static/images/svg/product-stripes.svg'), transparent;
+  background-size: 50vw 100vh;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bg-dots {
+  background: url('../../static/images/svg/dots.svg'), transparent;
+  background-size: 100px auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.bg-product-stripes-left {
+  background: url('../../static/images/svg/product-stripes.svg'), transparent;
+  background-size: 50vw 50vh;
+  background-position: 10% 30%;
+  background-repeat: no-repeat;
+}
+.bg-dots-left {
+  background: url('../../static/images/svg/dots.svg'), transparent;
+  background-size: 100px auto;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
 
 /* Product List */
 .product-list ul li {
@@ -1544,7 +1568,7 @@ blockquote {
 .Marquee--Item {
   position: relative;
   display: block;
-  font-size: 4rem;
+  font-size: 10vw;
   line-height: 1;
   text-transform: uppercase;
   transition: color 0.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -1599,21 +1623,7 @@ blockquote {
     transform: translateX(-110%);
   }
 }
-.product-stripes {
-  background: repeating-linear-gradient(
-    -70deg,
-    rgba(242, 180, 63, 0),
-    rgba(242, 180, 63, 0) 70px,
-    rgba(0, 0, 0, 0) 70px,
-    rgba(0, 0, 0, 0) 140px
-  );
-  background-color: #000;
-  transform: rotate(-3deg);
-  height: 200px;
-  position: fixed;
-  z-index: 3;
-  overflow: hidden !important;
-}
+
 .bg-stripes {
   background: repeating-linear-gradient(
     -70deg,

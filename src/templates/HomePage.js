@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
+import Image from '../components/Image'
 
 import CannabisHeader from '../components/CannabisHeader'
 import Content from '../components/Content'
@@ -18,6 +19,7 @@ export const HomePageTemplate = ({
   bakkedImg22,
   bakkedImg3,
   bakkedImg4,
+  icon,
   sticker1,
   sticker2,
   sticker3,
@@ -56,82 +58,81 @@ export const HomePageTemplate = ({
     <section class="Marquee--Section">
       <div class="Marquee--Inner">
         <h3 className="Marquee--Item">
-          001 100 0 010 100101 00 010 00 1 001 100 0 010 100101 00 010 00 1 001
-          100 0 010 100101 00 010 00 1 001 100 0 010 100101 00 010 00 1 001 100
-          0 010 100101 00 010 00 1
-        </h3>
-        <h3 className="Marquee--Item">
-          <span>&#9762;</span> LETS #GETBAKKED <span>&#9762;</span> LETS
-          #GETBAKKED <span>&#9762;</span> LETS #GETBAKKED
+          <Image src={icon} fill="#fff" size="cover" />
+          LETS #GETBAKKED
         </h3>
       </div>
     </section>
 
     <section className="section bg-primary-dusty">
-      <div className="container">
-        <div className="row col-lg-10 mx-auto">
-          <div className="col-lg-6 p-3">
-            <img
-              src={bakkedImg1}
-              alt={title}
-              className="img-fluid mx-auto py-4 text-center"
-            />
-            <Content source={section2} className="text-left" />
-            <Link to="/products" className="button">
-              SEE WHY WE MADE IT
-            </Link>
-            <Link to="/find" className="button">
-              FIND A DISPENSARY
-            </Link>
-          </div>
-          <div className="col-lg-6 my-auto">
-            <img
-              src={bakkedImg22}
-              alt={title}
-              className="img-fluid mx-auto text-center"
-            />
+      <div className="bg-product-stripes">
+        <div className="container">
+          <div className="row col-lg-10 mx-auto">
+            <div className="col-lg-6 p-3">
+              <img
+                src={bakkedImg1}
+                alt={title}
+                className="img-fluid mx-auto py-4 text-center"
+              />
+              <Content source={section2} className="text-left" />
+              <Link to="/products" className="button">
+                SEE WHY WE MADE IT
+              </Link>
+              <Link to="/find" className="button">
+                FIND A DISPENSARY
+              </Link>
+            </div>
+            <div className="col-lg-6 my-auto bg-dots">
+              <img
+                src={bakkedImg22}
+                alt={title}
+                className="img-fluid mx-auto text-center"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4 mx-auto">
-            <img src={sticker1} alt={title} className="sticker" />
-          </div>
-          <div className="col-lg-4 mx-auto">
-            <img src={sticker3} alt={title} className="sticker " />
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 mx-auto">
+              <img src={sticker1} alt={title} className="sticker" />
+            </div>
+            <div className="col-lg-4 mx-auto">
+              <img src={sticker3} alt={title} className="sticker " />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section className="section bg-primary">
+    <section className="section bg-primary-dusty">
       <div className="container breaker">&nbsp;</div>
     </section>
-    <section className="section bg-primary">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 mx-auto py-5">
-            <img
-              src={bakkedImg3}
-              alt={title}
-              className="img-fluid mx-auto text-center"
-            />
-          </div>
-          <div className="col-lg-4 my-auto">
-            <img
-              src={bakkedImg4}
-              alt={title}
-              className="img-fluid mx-auto text-center"
-            />
-            <Content source={section3} />
-            <Link to="/products" className="button">
-              SEE WHY WE MADE IT
-            </Link>
-            <div>
-              <a id="link1" href="#" class="tooltip">
-                nation<span class="tooltip__line"></span>
-                <span class="tooltip__content">One hope One Quest</span>
-              </a>
+    <section className="section bg-primary-dusty">
+      <div className="bg-product-stripes-left">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 mx-auto py-5 bg-dots-left">
+              <img
+                src={bakkedImg3}
+                alt={title}
+                className="img-fluid mx-auto text-center"
+              />
+            </div>
+            <div className="col-lg-4 my-auto">
+              <img
+                src={bakkedImg4}
+                alt={title}
+                className="img-fluid mx-auto text-center"
+              />
+              <Content source={section3} />
+              <Link to="/products" className="button">
+                SEE WHY WE MADE IT
+              </Link>
+              <div>
+                <a id="link1" href="#" class="tooltip">
+                  nation<span class="tooltip__line"></span>
+                  <span class="tooltip__content">One hope One Quest</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -212,6 +213,7 @@ export const pageQuery = graphql`
         bakkedImg22
         bakkedImg3
         bakkedImg4
+        icon
         sticker1
         sticker2
         sticker3
