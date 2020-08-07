@@ -24,7 +24,7 @@ section3: >-
 section4: >-
   TESTING IN SESSION: DIAMONDS, ROSIN & LIVE BUDDER
 section5: >-
-  # #GetBakked at retail dispensaries
+  ## #GetBakked at retail dispensaries
 
   throughout california, Colorado, Oregon, New Mexico, Maine & Vermont.
 

@@ -7,6 +7,7 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import FeatureArray from '../components/FeatureArray'
 import FormSimple from '../components/FormSimple'
+import Instagram from '../components/Instagram'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
@@ -25,7 +26,7 @@ export const HomePageTemplate = ({
   section3,
   section4,
   section5,
-  featureArray,
+  featureArray
 }) => (
   <main className="Home">
     <CannabisHeader backgroundImage={featuredImage} />
@@ -168,7 +169,7 @@ export const HomePageTemplate = ({
     <section className="section">
       <div className="container">
         <div className="col-lg-10 mx-auto text-center">
-          <h1>What’s another email between friends?</h1>
+          <h2>What’s another email between friends?</h2>
           <p>
             We know what you’re thinking but we keep short &amp; sweet and won’t
             spam your inbox. Sign-up to learn about new product releases,
@@ -177,6 +178,9 @@ export const HomePageTemplate = ({
           <FormSimple />
         </div>
       </div>
+    </section>
+    <section>
+      <Instagram />
     </section>
   </main>
 )

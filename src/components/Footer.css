@@ -32,12 +32,14 @@
 }
 .footerNav h4 {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 2vw;
+  line-height: 1;
   margin: 1rem 2rem 1rem 0;
 }
 .footerNav li {
   font-family: var(--font-secondary);
-  font-size: 14px;
+  font-size: 3vw;
+  line-height: 1;
   color: whitesmoke;
   text-decoration: none;
   text-align: left;
@@ -53,7 +55,6 @@
 }
 .footer {
   padding: 5rem 0;
-  font-size: 1.2rem;
   color: whitesmoke;
   font-family: var(--font-secondary);
 }
@@ -69,6 +70,13 @@
 .footer-credits li {
   display: inline-flex;
   padding: 0 1rem 0 0;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+.footer-credits li:hover {
+  color: var(--primary);
+  font-size: 2vw;
+  line-height: 1;
 }
 .footer--stripes--container {
   background: url('../../static/images/bg/stardust.png'), var(--secondary);
