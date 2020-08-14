@@ -16,7 +16,7 @@ if (typeof window !== 'undefined') {
   ) {
     console.log(
       `%cnetlifySiteURL: ${window.localStorage.getItem('netlifySiteURL')}`,
-      'color: hotpink; font-size: 15px'
+      'color: yellow; font-size: 15px'
     )
   }
 

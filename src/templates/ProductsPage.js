@@ -3,8 +3,9 @@ import { graphql } from 'gatsby'
 
 import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
-import FeatureArray from '../components/FeatureArray'
+import Image from '../components/Image'
 import BackgroundVideo from '../components/BackgroundVideo'
+import { ShoppingCart, MapPin } from 'react-feather'
 
 // Export Template for use in CMS preview
 export const ProductsPageTemplate = ({
@@ -17,12 +18,15 @@ export const ProductsPageTemplate = ({
   section1,
   section2,
   section3,
+  section4,
   bakkedImg1,
   bakkedImg2,
   bakkedImg3,
+  sticker1,
+  sticker2,
+  sticker3,
   featureBlock1,
   featureBlock2,
-  featureArray,
 }) => (
   <main>
     <section className="BackgroundVideo-section">
@@ -35,8 +39,14 @@ export const ProductsPageTemplate = ({
         <div className="row">
           <div className="col-lg-6">
             <Content source={section1} className="product-list" />
-            <button className="button">Find A Dispensary</button>
-            <button className="button">Find A Dispensary</button>
+            <button className="button">
+              <MapPin />
+              &nbsp; Find A Dispensary
+            </button>
+            <button className="button">
+              <ShoppingCart />
+              &nbsp; BUY AN EMPTY GYRO
+            </button>
           </div>
           <div className="col-lg-5">
             <img
@@ -76,7 +86,28 @@ export const ProductsPageTemplate = ({
 
     <section className="section">
       <div className="container col-lg-10 text-center">
-        <img src="../images/svg/test-symbol.svg" />
+        {sticker1 && <Image src={sticker1} alt={title} size="10rem" />}
+        <Image src={sticker2} alt={title} size="cover" />
+        <Image src={sticker3} alt={title} size="cover" />
+        {sticker1 && <Image src={sticker1} alt={title} size="10rem" />}
+      </div>
+    </section>
+
+    <section className="section bg-stripes"></section>
+
+    <section className="section bg-primary-dusty">
+      <div className="container row">
+        <div className="col-lg-6">
+          <Content source={section3} className="my-auto" />
+          <button className="button">EXPLORE OIL TYPES</button>
+        </div>
+        <div className="col-lg-6">
+          <img
+            src={bakkedImg2}
+            alt={title}
+            className="img-fluid mx-auto text-center"
+          />
+        </div>
       </div>
     </section>
 
@@ -92,15 +123,9 @@ export const ProductsPageTemplate = ({
           />
         </div>
         <div className="col-lg-6">
-          <Content source={section3} className="my-auto" />
+          <Content source={section4} className="my-auto" />
           <button className="button">EXPLORE OIL TYPES</button>
         </div>
-      </div>
-    </section>
-
-    <section className="section thick">
-      <div className="container col-lg-10">
-        <FeatureArray images={featureArray} />
       </div>
     </section>
 
@@ -147,9 +172,13 @@ export const pageQuery = graphql`
         section1
         section2
         section3
+        section4
         bakkedImg1
         bakkedImg2
         bakkedImg3
+        sticker1
+        sticker2
+        sticker3
         featureBlock1
         featureBlock2
       }

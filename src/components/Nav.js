@@ -54,10 +54,10 @@ export class Navigation extends Component {
             <NavLink to="/dabaratus/">Dabaratus</NavLink>
             <NavLink to="/find/">Find</NavLink>
             <NavLink to="/faq/">FAQ</NavLink>
-            <NavLink to="/contact/">Future Retailer</NavLink>
+            <NavLink to="/retailer/">Future Retailer</NavLink>
             <NavLink to="/contact/">Contact</NavLink>
           </div>
-          <Link to="/find" className="button--locator my-auto">
+          <Link to="/find/" className="button--locator my-auto">
             <MapPin size="20px" />
             &nbsp;STORE LOCATOR
           </Link>

@@ -24,29 +24,29 @@ section2: >-
 
   Here at Bakked R&D we create solutions to dabbing problems so you can spend less time getting ready to take a dab and more time actually enjoying your dabs, without having to worry about cleaning up a mess afterwards.
 section3: >-
+  ## Solution
+
+  A container your dabs & wallet will thank you for, meet the Gyro. Gone are the days of wasted cannabis extract, with the Gyro you can spin, shake it, toss it and even drop it and your dabs still won’t spill. We encourage you to try this at home.
+
+    - ANTI-GRAVITY PROOF
+    
+    - ZERO SPILL
+
+    -POCKET PROOF
+section4: >-
   ## LIVE RESIN
 
   Looking for flavor? Look no further. Live Resin is a full-spectrum, flavor-rich extract that lets you taste every flavor and feel every feeling. Live Resin is made up of terpene fractions and high-potency cannabinoid crystals.
 
   Depending on the method used to refine the Live Resin, consistencies and ratios of terpene extract to cannabinoid crystals can vary, from Sauces (larger crystals) to Sugars (finer, sand-like consistency).
 bakkedImg1: '../images/photos/gyro-product.png'
-bakkedImg2: '../images/photos/live-resin-lockup.png'
-bakkedImg3: '../images/photos/live-resin-lockup.png'
+bakkedImg2: '../images/photos/caution-sticker.jpg'
+bakkedImg3: '../images/photos/precious-cargo.jpg'
+sticker1: '../images/photos/stickers/arrow.png'
+sticker2: '../images/photos/stickers/precious-cargo.jpg'
+sticker3: '../images/photos/stickers/caution-sticker.jpg'
 featureBlock1: '../images/photos/gyro-product.png'
 featureBlock2: '../images/photos/gyro-product.png'
-featureArray:
-  - alt: CONSISTENT DOSE AT THE PUSH OF A BUTTON
-    image: '../images/svg/consistent.svg'
-    subtitle: CONSISTENT DOSE AT THE PUSH OF A BUTTON
-  - alt: AVAILABLE IN STRAIN SPECIFIC INDICA, SATIVA, HYBRID AND CBD VARIETIES
-    image: '../images/svg/weed.svg'
-    subtitle: AVAILABLE IN STRAIN SPECIFIC INDICA, SATIVA, HYBRID AND CBD VARIETIES
-  - alt: HIGHLY POTENT AND PURE CANNABIS DISTILLATE
-    image: '../images/svg/oil.svg'
-    subtitle: HIGHLY POTENT AND PURE CANNABIS DISTILLATE
-  - alt: HEAT RESISTANT METAL TIP FOR DABBING
-    image: '../images/svg/heat.svg'
-    subtitle: HEAT RESISTANT METAL TIP FOR DABBING
 meta:
   description: Bakked Dabaratus is the sesh without the mess. The most conventient way to take dabs. Fully activated cannabis oil.
   title: Gyro
