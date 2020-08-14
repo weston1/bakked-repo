@@ -27,7 +27,7 @@ export default class FeatureArray extends Component {
     loaded: false,
     isOpen: false,
     sliderImages: [],
-    index: 0,
+    index: 0
   }
 
   isOpen(isOpen, index) {
@@ -46,10 +46,10 @@ export default class FeatureArray extends Component {
             title: img.title,
             subtitle: img.subtitle,
             w: result.width,
-            h: result.height,
+            h: result.height
           }
           this.setState({
-            sliderImages: newImagesArr,
+            sliderImages: newImagesArr
           })
           return true
         },
@@ -77,7 +77,7 @@ export default class FeatureArray extends Component {
     return (
       <Fragment>
         {images && images.length > 0 && (
-          <div className="FeatureArray">
+          <div className="FeatureArray bg-dusty">
             {images.map((image, index) => (
               <figure
                 className="FeatureArray--Item"
@@ -89,7 +89,7 @@ export default class FeatureArray extends Component {
                     resolutions="small"
                     src={image.image}
                     alt={image.alt}
-                    className="img-fluid logo-image-partners"
+                    className="img-fluid FeatureArray--Petri"
                   />
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export default class FeatureArray extends Component {
                     resolutions="small"
                     src={image.sticker}
                     alt={image.alt}
-                    className="img-fluid logo-image-partners"
+                    className="img-fluid FeatureArray--Sticker"
                   />
                 </div>
                 {image.title && (
@@ -116,5 +116,5 @@ export default class FeatureArray extends Component {
 }
 
 FeatureArray.propTypes = {
-  images: PropTypes.array.isRequired,
+  images: PropTypes.array.isRequired
 }

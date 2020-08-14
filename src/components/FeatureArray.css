@@ -3,12 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 0 1rem;
-}
-.logo-image-partners {
-  width: 100px !important;
-  height: auto;
 }
 .FeatureArray figcaption {
   font-family: var(--font-primary);
@@ -39,35 +34,42 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: calc(100% / 3 - 5rem);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+}
+.FeatureArray--Petri {
+  height: 386px;
+  width: auto;
 }
 @media screen and (max-width: 750px) {
   .FeatureArray--Item {
     width: 100%;
-    max-width: 20rem;
   }
 }
 
 .FeatureArray--Item > div {
   position: relative;
   width: 100%;
-  height: 10rem;
 }
 
 .FeatureArray--Item figcaption {
   text-align: center;
-  padding: 2rem;
+  font-family: var(--font-secondary);
+  padding: 2rem 0;
+  text-transform: uppercase;
+  width: 50%;
+}
+.FeatureArray--Sticker {
+  height: 72px;
+  width: auto;
 }
 
 @supports (object-fit: contain) {
   .FeatureArray--Item img {
     object-fit: contain;
     object-position: center;
-    width: 100%;
+    width: 386px;
     background-color: white;
-    margin: 2rem;
     margin: 0 auto;
     text-align: center;
   }

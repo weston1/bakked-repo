@@ -1301,19 +1301,21 @@ blockquote {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: justify;
+  vertical-align: middle;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: var(--font-secondary);
   display: inline-block;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem;
   margin: 0.2rem 0.5rem 0.2rem 0;
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
   border-radius: var(--borderRadius);
   text-align: center;
-  width: 250px;
+  width: 300px;
 }
 .button-w {
   background: white;

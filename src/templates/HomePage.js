@@ -1,14 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
+import { Fade } from 'react-awesome-reveal'
+import { MapPin } from 'react-feather'
 import Image from '../components/Image'
 
 import CannabisHeader from '../components/CannabisHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import FeatureArray from '../components/FeatureArray'
-import FormSimple from '../components/FormSimple'
-import Instagram from '../components/Instagram'
+import FindSection from '../components/FindSection'
+import FormSignUp from '../components/FormSignUp'
+import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
@@ -47,11 +50,9 @@ export const HomePageTemplate = ({
 
     <section className="section thick bg-dusty">
       <div className="container">
-        <Content
-          source={section1}
-          className="col-lg-9 text-center mx-auto reveal-from-bottom"
-          data-reveal-delay="200"
-        />
+        <Fade>
+          <Content source={section1} className="col-lg-9 text-center mx-auto" />
+        </Fade>
       </div>
     </section>
 
@@ -79,7 +80,7 @@ export const HomePageTemplate = ({
                 SEE WHY WE MADE IT
               </Link>
               <Link to="/find" className="button">
-                FIND A DISPENSARY
+                <MapPin /> FIND A DISPENSARY
               </Link>
             </div>
             <div className="col-lg-6 my-auto bg-dots">
@@ -157,32 +158,11 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
+    <FindSection />
 
-    <section className="section">
-      <div className="container">
-        <Content source={section5} className="col-lg-10 mx-auto text-center" />
-        <Link to="/products" className="button mx-auto text-center">
-          FIND A DISPENSARY
-        </Link>
-      </div>
-    </section>
+    <FormSignUp />
 
-    <section className="section">
-      <div className="container">
-        <div className="col-lg-10 mx-auto text-center">
-          <h2>What’s another email between friends?</h2>
-          <p>
-            We know what you’re thinking but we keep short &amp; sweet and won’t
-            spam your inbox. Sign-up to learn about new product releases,
-            special offers &amp; drops.
-          </p>
-          <FormSimple />
-        </div>
-      </div>
-    </section>
-    <section>
-      <Instagram />
-    </section>
+    <InstagramSection />
   </main>
 )
 

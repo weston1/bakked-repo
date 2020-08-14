@@ -1,0 +1,12 @@
+.InstagramSection {
+  height: 100vh;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .InstagramSection {
+    padding: 0;
+    margin: 0;
+  }
+}

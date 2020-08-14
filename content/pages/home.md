@@ -37,11 +37,11 @@ videoSourceURL: '../video/bakkedvid540.mp4'
 
 featureArray:
   - alt: Live Resin
-    image: '../images/photos/resin.png'
+    image: '../images/photos/live-resin.jpg'
     sticker: '../images/photos/stickers/live-resin.png'
     title: available in the gyro
   - alt: HIGH TERPENE EXTRACT
-    image: '../images/photos/petri.png'
+    image: '../images/photos/high-terpene-extract.jpg'
     sticker: '../images/photos/stickers/high-terpene-extract.png'
     title: available in the DABARATUS
 meta:
