@@ -31,7 +31,7 @@ export const HomePageTemplate = ({
   section3,
   section4,
   section5,
-  featureArray,
+  featureArray
 }) => (
   <main className="Home">
     <CannabisHeader backgroundImage={featuredImage} />
@@ -94,10 +94,10 @@ export const HomePageTemplate = ({
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 mx-auto">
+            <div className="col-lg-4 col-md-4 col-8 mx-auto">
               <img src={sticker1} alt={title} className="sticker" />
             </div>
-            <div className="col-lg-4 mx-auto">
+            <div className="col-lg-4 col-md-4 col-8 mx-auto">
               <img src={sticker3} alt={title} className="sticker " />
             </div>
           </div>

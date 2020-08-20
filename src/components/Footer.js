@@ -19,14 +19,12 @@ export default () => (
           </div>
           <div className="col-lg-4 col-6">
             <h4>Subscribe</h4>
-            <div className="col-lg-3 mb-auto py-3">
-              <FormMini />
-            </div>
+            <FormMini />
           </div>
           <div className="col-lg-4 col-6">
             <h4>Explore</h4>
             <div className="row">
-              <div className="col-lg-6 footer-credits">
+              <div className="footer-credits">
                 <li>
                   <Link to="/gyro/">Gyro</Link>
                 </li>

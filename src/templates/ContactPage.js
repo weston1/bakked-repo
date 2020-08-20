@@ -5,13 +5,14 @@ import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import './ContactPage.css'
 import '../components/Form.css'
+import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
   body,
   title,
   subtitle,
-  featuredImage,
+  featuredImage
 }) => (
   <main className="Contact">
     <PageHeader
@@ -114,6 +115,9 @@ export const ContactPageTemplate = ({
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <InstagramSection />
     </section>
   </main>
 )

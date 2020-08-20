@@ -12,20 +12,20 @@ const InstagramSection = ({ title, className = '' }) => {
         <h2 className="InstagramSection--Title">#GetBakked</h2>
         <Instagram size="5rem" />
         <p>FOLLOW US @BAKKED_SOLUTIONS</p>
+      </div>
 
-        <div className="">
-          <img
-            src="../images/photos/instagram-placeholder.jpg"
-            className="img-fluid"
-          />
-        </div>
+      <div className="">
+        <img
+          src="../images/photos/instagram-placeholder.jpg"
+          className="img-fluid"
+        />
       </div>
     </section>
   )
 }
 
 InstagramSection.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string
 }
 
 export default InstagramSection
