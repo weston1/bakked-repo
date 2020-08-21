@@ -131,7 +131,9 @@
   cursor: progress;
 }
 .Form--SubmitButton {
+  font-family: var(--font-secondary);
   background-color: var(--primary);
+  text-transform: uppercase;
 }
 .Form--SubmitButton:hover {
   background-color: var(--secondary);

@@ -7364,7 +7364,7 @@ gatsby-transformer-yaml@^2.2.15:
     lodash "^4.17.15"
     unist-util-select "^1.5.0"
 
-gatsby@^2.17.7:
+gatsby@^2.20.6:
   version "2.24.47"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.47.tgz#44f50af6304111c0e5b7f9e9b777103dc2245a93"
   integrity sha512-+LLqdKqfVGpk0GyKMaWMnCqonVUyumg7a5fhODdZbDELmcNsQKtO5HShKs8ZbMm1PIIHewmU3uRlqRZygfAD6w==
@@ -13825,6 +13825,11 @@ react-split-pane@^0.1.85:
     prop-types "^15.7.2"
     react-lifecycles-compat "^3.0.4"
     react-style-proptype "^3.2.2"
+
+react-ssg-netlify-forms@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-ssg-netlify-forms/-/react-ssg-netlify-forms-1.0.2.tgz#1975eeb36dba940f97a58e6853d832593bae68fe"
+  integrity sha512-BLKkIDfo5G81LGYwA54vuKq+ZiY1QHJvuKx9G2OLAhSVf7NO0BpU5Wokch9rA02maILicQfKbB0X7hShZTG45A==
 
 react-style-proptype@^3.2.2:
   version "3.2.2"

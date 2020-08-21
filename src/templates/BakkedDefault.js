@@ -2,23 +2,41 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
+import FormRetailer from '../components/FormRetailer'
+import InstagramSection from '../components/InstagramSection'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
-export const BakkedDefaultTemplate = ({ title, subtitle, featuredImage }) => (
-  <main className="BakkedDefault">
+export const BakkedDefaultTemplate = ({
+  title,
+  subtitle,
+  featuredImage,
+  img1
+}) => (
+  <main className="BakkedDefault bg-dusty">
     <PageHeader
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
+      className=" col-lg-10 mx-auto"
     />
-
-    <section className="section thick">
+    <section className="section">
       <div className="container">
-        <p>{subtitle}</p>
+        <FormRetailer />
+        <div className="container text-center">
+          <div className="col-lg-8 mx-auto">
+            <p>{subtitle}</p>
+          </div>
+          <div className="py-3">
+            <img src={img1} />
+          </div>
+        </div>
       </div>
     </section>
+    <section className="section thick bg-stripes"></section>
+    <section className="section thick"></section>
+
+    <InstagramSection />
   </main>
 )
 
@@ -41,6 +59,7 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        img1
       }
     }
   }

@@ -12,7 +12,7 @@ export const ContactPageTemplate = ({
   body,
   title,
   subtitle,
-  featuredImage
+  featuredImage,
 }) => (
   <main className="Contact">
     <PageHeader
