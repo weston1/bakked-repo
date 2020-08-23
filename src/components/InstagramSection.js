@@ -20,7 +20,6 @@ const InstagramSection = ({ title, className = '' }) => {
           username="theterpometer"
           classname="Feed"
           classnameLoading="Loading"
-          max="6"
         />
       </div>
     </section>
