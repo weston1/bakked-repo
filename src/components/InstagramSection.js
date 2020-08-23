@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Instagram } from 'react-feather'
+import Feed from 'react-instagram-authless-feed'
 
 import './InstagramSection.css'
 
@@ -14,10 +15,12 @@ const InstagramSection = ({ title, className = '' }) => {
         <p>FOLLOW US @BAKKED_SOLUTIONS</p>
       </div>
 
-      <div className="">
-        <img
-          src="../images/photos/instagram-placeholder.jpg"
-          className="img-fluid"
+      <div className="Insta-Format">
+        <Feed
+          username="theterpometer"
+          classname="Feed"
+          classnameLoading="Loading"
+          max="6"
         />
       </div>
     </section>
@@ -25,7 +28,7 @@ const InstagramSection = ({ title, className = '' }) => {
 }
 
 InstagramSection.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string
 }
 
 export default InstagramSection

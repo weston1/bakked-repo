@@ -3,14 +3,16 @@ import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import { Fade } from 'react-awesome-reveal'
 import { MapPin } from 'react-feather'
-import Image from '../components/Image'
 
-import CannabisHeader from '../components/CannabisHeader'
-import Content from '../components/Content'
+import Image from '../components/Image'
 import Layout from '../components/Layout'
+import Content from '../components/Content'
+
+import BakkedHeader from '../components/BakkedHeader'
 import FeatureArray from '../components/FeatureArray'
 import FindSection from '../components/FindSection'
 import FormSignUp from '../components/FormSignUp'
+import BakkedMarquee from '../components/BakkedMarquee'
 import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
@@ -31,22 +33,12 @@ export const HomePageTemplate = ({
   section3,
   section4,
   section5,
-  featureArray,
+  featureArray
 }) => (
   <main className="Home">
-    <CannabisHeader backgroundImage={featuredImage} />
+    <BakkedHeader backgroundImage={featuredImage} />
 
-    <section className="section thick row">
-      <div className="col-lg-2">
-        <img src={sticker1} alt={title} className="sticker sticker-header-1" />
-      </div>
-      <div className="col-lg-4">
-        <img src={sticker2} alt={title} className="sticker sticker-header-2" />
-      </div>
-      <div className="col-lg-3">
-        <img src={sticker3} alt={title} className="sticker sticker-header-3" />
-      </div>
-    </section>
+    <section className="section thick"></section>
 
     <section className="section thick bg-dusty">
       <div className="container">
@@ -56,13 +48,8 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <section class="Marquee--Section">
-      <div class="Marquee--Inner">
-        <h3 className="Marquee--Item">
-          <Image src={icon} fill="#fff" size="cover" />
-          LETS #GETBAKKED
-        </h3>
-      </div>
+    <section className="Overflow--Container">
+      <BakkedMarquee />
     </section>
 
     <section className="section bg-primary-dusty">
@@ -139,7 +126,6 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
-
     <section className="section bg-stripes"></section>
 
     <section className="section thick">

@@ -1445,33 +1445,11 @@ blockquote {
 
 .sticker {
   transition: all 0.3s ease-in-out;
-  opacity: 0.9;
-  max-width: 200px;
+  max-width: 50%;
 }
 .sticker:hover {
-  transform: translate(-10%, -5%);
+  transform: scale(1.02);
   z-index: 10;
-}
-.sticker-header-1 {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  display: block;
-  margin-top: -50px;
-}
-.sticker-header-2 {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  display: block;
-  margin: -200px 0 0 -100px;
-}
-.sticker-header-3 {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  display: block;
-  margin: -100px 0 0 -200px;
 }
 @media (max-width: 600px) {
   .sticker {
@@ -1612,6 +1590,12 @@ blockquote {
 }
 
 /* Marquee */
+
+.Overflow--Container {
+  width: 100vw;
+  display: block;
+  overflow: hidden !important;
+}
 
 .Marquee--Section {
   position: relative;

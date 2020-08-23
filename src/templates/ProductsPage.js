@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
 import Image from '../components/Image'
+import KeenSlider from '../components/KeenSlider'
+
 import BackgroundVideo from '../components/BackgroundVideo'
 import { ShoppingCart, MapPin } from 'react-feather'
 
@@ -26,7 +28,7 @@ export const ProductsPageTemplate = ({
   sticker2,
   sticker3,
   featureBlock1,
-  featureBlock2,
+  featureBlock2
 }) => (
   <main>
     <section className="BackgroundVideo-section">
@@ -75,11 +77,10 @@ export const ProductsPageTemplate = ({
         <div className="col-lg-6">
           <small>TEST 4.12C</small>
           <h2>ANTI-GRAVITY SIMULATOR</h2>
-
-          <h1>Carousel</h1>
+          <KeenSlider />
         </div>
         <div className="col-lg-6">
-          <h1>Carousel</h1>
+          <KeenSlider />
         </div>
       </div>
     </section>

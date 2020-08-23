@@ -4,28 +4,12 @@
   background-position: top center;
   background-repeat: no-repeat;
 }
-.deco {
-  width: 100%;
-  height: 100%;
-  font-size: 4vw;
-  line-height: 5vh;
-  font-family: var(--font-primary);
-  -webkit-text-stroke: 0.5px #000;
-  text-stroke: 0.5px #000;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  color: transparent;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .Contact-Container {
   margin: 0 auto;
 }
 .Contact--Details {
   margin-top: 3rem;
 }
-
 .Contact--Details--Item {
   display: flex;
   padding: 2rem 0;
@@ -35,7 +19,6 @@
   color: inherit;
   transition: color 0.2s ease-in-out;
 }
-
 .Contact--Details--Item:hover,
 .Contact--Details--Item:focus {
   color: var(--primary);

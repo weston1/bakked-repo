@@ -10,7 +10,7 @@ export class Navigation extends Component {
   state = {
     active: false,
     activeSubNav: false,
-    currentPath: false,
+    currentPath: false
   }
 
   componentDidMount = () =>
@@ -23,7 +23,7 @@ export class Navigation extends Component {
 
   toggleSubNav = subNav =>
     this.setState({
-      activeSubNav: this.state.activeSubNav === subNav ? false : subNav,
+      activeSubNav: this.state.activeSubNav === subNav ? false : subNav
     })
 
   render() {
@@ -62,10 +62,10 @@ export class Navigation extends Component {
             &nbsp;STORE LOCATOR
           </Link>
           <button
-            className="Button-blank Nav--MenuButton hamburger"
+            className="Button-blank Nav--MenuButton"
             onClick={this.handleMenuToggle}
           >
-            {active ? <X size="3rem" /> : <Menu size="3rem" />}
+            {active ? <X size="3rem" /> : <Menu size="3rem" className="" />}
           </button>
         </div>
       </nav>
