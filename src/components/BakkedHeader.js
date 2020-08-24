@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
-import { CgAdidas } from 'react-icons/cg'
 
 import './BakkedHeader.css'
 
@@ -43,9 +42,7 @@ export default props => {
   return (
     <div className="BakkedHeader">
       <div ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide number-slide1">
-          <CgAdidas />
-        </div>
+        <div className="keen-slider__slide number-slide1">1</div>
         <div className="keen-slider__slide number-slide2">2</div>
         <div className="keen-slider__slide number-slide3">3</div>
         <div className="keen-slider__slide number-slide4">4</div>
