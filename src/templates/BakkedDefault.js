@@ -11,7 +11,7 @@ export const BakkedDefaultTemplate = ({
   title,
   subtitle,
   featuredImage,
-  img1
+  img1,
 }) => (
   <main className="BakkedDefault bg-dusty">
     <PageHeader

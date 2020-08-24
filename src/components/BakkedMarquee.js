@@ -22,7 +22,7 @@ const BakkedMarquee = () => {
 }
 
 BakkedMarquee.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
 }
 
 export default BakkedMarquee

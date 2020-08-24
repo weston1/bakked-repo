@@ -33,7 +33,7 @@ export const HomePageTemplate = ({
   section3,
   section4,
   section5,
-  featureArray
+  featureArray,
 }) => (
   <main className="Home">
     <BakkedHeader backgroundImage={featuredImage} />
