@@ -28,7 +28,7 @@ export const BakkedMarquee = () => {
                 backgroundColor: 'black',
                 textAlign: 'center',
                 lineHeight: '50px',
-                boxShadow: '5px 4px 5px rgba(0,0,0,0.4)'
+                boxShadow: '5px 4px 5px rgba(0,0,0,0.4)',
               }}
             >
               {id}

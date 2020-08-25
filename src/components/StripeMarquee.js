@@ -5,12 +5,13 @@ import './BakkedMarquee.css'
 
 export const StripeMarquee = () => {
   return (
-    <div className="Marquee-Container" style={{ height: '500px' }}>
+    <div className="Marquee-Container" style={{ height: '200px' }}>
       <Marquee
         velocity={12}
         minScale={0.7}
         resetAfterTries={200}
         scatterRandomly
+        className="bg-stripes"
       >
         {times(5, Number).map(id => (
           <Motion
@@ -22,13 +23,12 @@ export const StripeMarquee = () => {
           >
             <div
               style={{
-                width: '50px',
-                height: '50px',
-                borderRadius: '50%',
-                backgroundColor: 'black',
-                textAlign: 'center',
-                lineHeight: '50px',
-                boxShadow: '5px 4px 5px rgba(0,0,0,0.4)'
+                background:
+                  'repeating-linear-gradient(-70deg, rgba(242, 180, 63, 1), rgba(242, 180, 63, 1) 70px,rgba(0, 0, 0, 0) 70px,rgba(0, 0, 0, 0) 140px)',
+                backgroundColor: '#000',
+                transform: 'rotate(-3deg)',
+                height: '200px',
+                position: 'relative',
               }}
             >
               {id}

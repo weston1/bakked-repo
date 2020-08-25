@@ -12,6 +12,7 @@ import FeatureArray from '../components/FeatureArray'
 import FindSection from '../components/FindSection'
 import FormSignUp from '../components/FormSignUp'
 import { BakkedMarquee } from '../components/BakkedMarquee'
+import { StripeMarquee } from '../components/StripeMarquee'
 import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
@@ -120,8 +121,7 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section bg-stripes"></section>
-
+    <StripeMarquee />
     <section className="section thick">
       <div className="text-center mx-auto py-4">
         <h2>EXTRACT TYPES</h2>

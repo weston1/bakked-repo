@@ -26,7 +26,7 @@ export const BackupMarquee = () => {
                 borderRadius: '50%',
                 backgroundColor: 'yellow',
                 textAlign: 'center',
-                lineHeight: '50px'
+                lineHeight: '50px',
               }}
             >
               {id}
