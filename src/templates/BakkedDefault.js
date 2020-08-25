@@ -28,7 +28,7 @@ export const BakkedDefaultTemplate = ({
             <p>{subtitle}</p>
           </div>
           <div className="py-3">
-            <img src={img1} />
+            <img alt="Leafly" src={img1} />
           </div>
         </div>
       </div>

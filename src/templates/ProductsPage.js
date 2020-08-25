@@ -63,7 +63,7 @@ export const ProductsPageTemplate = ({
     <section className="section bg-stripes"></section>
     <section className="section">
       <div className="container col-lg-10 text-center">
-        <img src="../images/svg/test-symbol.svg" />
+        <img alt="Bakked Sticker 1" src="../images/svg/test-symbol.svg" />
       </div>
     </section>
     <section className="section">

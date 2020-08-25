@@ -74,36 +74,36 @@
   max-height: 100vh;
 }
 
-.number-slide1 {
-  background: rgb(64, 175, 255);
+.bakked-slide1 {
   background: linear-gradient(
-    128deg,
-    rgba(64, 175, 255, 1) 0%,
-    rgba(63, 97, 255, 1) 100%
-  );
+      128deg,
+      rgba(64, 175, 255, 0.1) 0%,
+      rgba(63, 97, 255, 3) 100%
+    ),
+    url('https://i.ytimg.com/vi/FxN4aqp9beU/maxresdefault.jpg');
+  background-position: center center;
 }
 
-.number-slide2 {
-  background: rgb(255, 75, 64);
+.bakked-slide2 {
   background: linear-gradient(
-    128deg,
-    rgba(255, 154, 63, 1) 0%,
-    rgba(255, 75, 64, 1) 100%
-  );
+      128deg,
+      rgba(255, 154, 63, 0.1) 0%,
+      rgba(255, 75, 64, 2) 100%
+    ),
+    url('https://storage.googleapis.com/hellomd-articles/articles/58b4b02310b47e000bb27b62/embedded_images/58b4b02810b47e000bb27b66/Screen_Shot_2017-02-27_at_2.40.18_PM.png'),
+    #000;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.number-slide3 {
-  background: rgb(182, 255, 64);
+.bakked-slide3 {
   background: linear-gradient(
-    128deg,
-    rgba(182, 255, 64, 1) 0%,
-    rgba(63, 255, 71, 1) 100%
-  );
-  background: linear-gradient(
-    128deg,
-    rgba(189, 255, 83, 1) 0%,
-    rgba(43, 250, 82, 1) 100%
-  );
+      128deg,
+      rgba(189, 255, 83, 0.1) 0%,
+      rgba(43, 250, 82, 2) 100%
+    ),
+    url('https://i.ytimg.com/vi/0YmRrM1lwQA/maxresdefault.jpg'), #000;
+  background-position: center center;
 }
 
 .number-slide4 {
@@ -135,35 +135,68 @@
 /* Stickers */
 
 .sticker-header-1 {
-  width: 100%;
+  width: 154px;
+  max-width: 100%;
   height: auto;
+  overflow: hidden;
   position: absolute;
   display: block;
-  margin-top: -50px;
+  left: 100px;
+  margin-top: -40px;
+  z-index: 2;
 }
 .sticker-header-2 {
-  width: 100%;
+  width: 559px;
+  max-width: 100%;
+  overflow: hidden;
   height: auto;
   position: absolute;
+  z-index: 1;
   display: block;
-  margin: -200px 0 0 0;
+  left: 80px;
+  margin-top: -200px;
+  z-index: 1;
 }
 .sticker-header-3 {
-  width: 100%;
+  width: 225px;
+  max-width: 100%;
+  overflow: hidden;
   height: auto;
   position: absolute;
   display: block;
-  margin: -100px 0 0 0;
+  left: 300px;
+  margin-top: -100px;
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
   .BakkedHeader {
     padding: 0;
+    height: 70vh;
   }
   .BakkedHeader--Title {
     font-size: 4rem;
   }
   .BakkedHeader-large {
     padding: 12.5rem 0;
+  }
+  .sticker-header-1 {
+    width: 100px;
+    left: 25px;
+    margin-top: -20px;
+  }
+  .sticker-header-2 {
+    width: 250px;
+    overflow: hidden;
+    left: 50px;
+    margin-top: -80px;
+  }
+  .sticker-header-3 {
+    width: 150px;
+    max-width: 100%;
+    overflow: hidden;
+    left: 200px;
+    margin-top: -50px;
+    z-index: 2;
   }
 }

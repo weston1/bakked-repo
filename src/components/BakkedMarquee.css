@@ -11,7 +11,7 @@
   clip-path: inset(0%);
   width: 100%;
   height: auto;
-  background-color: var(--pageBg);
+  background-color: var(--secondary);
   border-top: 2px solid var(--secondary);
   border-bottom: 2px solid var(--secondary);
   padding: 0;
@@ -29,6 +29,12 @@
   display: flex;
   width: 100%;
   overflow: hidden;
+  font-family: var(--font-primary);
+  font-size: 15rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: white;
 }
 .Marquee--Inner:hover {
   color: var(--secondary);

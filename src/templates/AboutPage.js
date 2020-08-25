@@ -36,7 +36,7 @@ export const AboutPageTemplate = ({
     <section className="section">
       <div className="container">
         <div className="mx-auto col-lg-3 col-8 text-center section">
-          <img src={featuredLogo2} />
+          <img alt="Bakked Quality Extracts" src={featuredLogo2} />
         </div>
         <div className="taCenter col-lg-6 mx-auto">
           <h2>
@@ -54,10 +54,18 @@ export const AboutPageTemplate = ({
       <section className="section">
         <div className="container row">
           <div className="taCenter col-8 mr-auto ">
-            <img src={aboutImage1} className="img-fluid about-img-1" />
+            <img
+              alt="About Bakked"
+              src={aboutImage1}
+              className="img-fluid about-img-1"
+            />
           </div>
           <div className="taCenter col-6 ml-auto">
-            <img src={aboutImage2} className="img-fluid about-img-2" />
+            <img
+              alt="About Bakked Extracts"
+              src={aboutImage2}
+              className="img-fluid about-img-2"
+            />
           </div>
         </div>
       </section>

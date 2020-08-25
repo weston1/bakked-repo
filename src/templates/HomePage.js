@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import { Fade } from 'react-awesome-reveal'
 import { MapPin } from 'react-feather'
 
-import Image from '../components/Image'
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 
@@ -12,7 +11,7 @@ import BakkedHeader from '../components/BakkedHeader'
 import FeatureArray from '../components/FeatureArray'
 import FindSection from '../components/FindSection'
 import FormSignUp from '../components/FormSignUp'
-import BakkedMarquee from '../components/BakkedMarquee'
+import { BakkedMarquee } from '../components/BakkedMarquee'
 import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
@@ -38,7 +37,7 @@ export const HomePageTemplate = ({
   <main className="Home">
     <BakkedHeader backgroundImage={featuredImage} />
 
-    <section className="section thick"></section>
+    <section className="section"></section>
 
     <section className="section thick bg-dusty">
       <div className="container">
@@ -67,7 +66,8 @@ export const HomePageTemplate = ({
                 SEE WHY WE MADE IT
               </Link>
               <Link to="/find" className="button">
-                <MapPin /> FIND A DISPENSARY
+                <MapPin size="12px" className="title" />
+                &nbsp; FIND A DISPENSARY
               </Link>
             </div>
             <div className="col-lg-6 my-auto bg-dots">
@@ -115,12 +115,6 @@ export const HomePageTemplate = ({
               <Link to="/products" className="button">
                 SEE WHY WE MADE IT
               </Link>
-              <div>
-                <a id="link1" href="#" class="tooltip">
-                  nation<span class="tooltip__line"></span>
-                  <span class="tooltip__content">One hope One Quest</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
