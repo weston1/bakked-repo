@@ -3,7 +3,7 @@ import Marquee, { Motion, randomIntFromInterval } from 'react-marquee-slider'
 import times from 'lodash/times'
 import './BakkedMarquee.css'
 
-export const BakkedMarquee = () => {
+export const StripeMarquee = () => {
   return (
     <div className="Marquee-Container" style={{ height: '500px' }}>
       <Marquee

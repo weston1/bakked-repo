@@ -1,11 +1,10 @@
 import React from 'react'
 import Marquee, { Motion, randomIntFromInterval } from 'react-marquee-slider'
 import times from 'lodash/times'
-import './BakkedMarquee.css'
 
-export const BakkedMarquee = () => {
+export const BackupMarquee = () => {
   return (
-    <div className="Marquee-Container" style={{ height: '500px' }}>
+    <div style={{ height: '500px' }}>
       <Marquee
         velocity={12}
         minScale={0.7}
@@ -25,10 +24,9 @@ export const BakkedMarquee = () => {
                 width: '50px',
                 height: '50px',
                 borderRadius: '50%',
-                backgroundColor: 'black',
+                backgroundColor: 'yellow',
                 textAlign: 'center',
-                lineHeight: '50px',
-                boxShadow: '5px 4px 5px rgba(0,0,0,0.4)'
+                lineHeight: '50px'
               }}
             >
               {id}
