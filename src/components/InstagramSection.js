@@ -12,11 +12,14 @@ const InstagramSection = ({ title, className = '' }) => {
       <div className="container col-lg-10 mx-auto text-center">
         <h2 className="InstagramSection--Title">#GetBakked</h2>
         <Instagram size="5rem" />
-        <p>FOLLOW US @BAKKED_SOLUTIONS</p>
+        <div className="py-4">
+          <p>FOLLOW US @BAKKED_SOLUTIONS</p>
+        </div>
       </div>
 
       <div className="Insta-Format">
         <Feed
+          count="6"
           username="theterpometer"
           classname="Feed"
           classnameLoading="Loading"
@@ -27,7 +30,7 @@ const InstagramSection = ({ title, className = '' }) => {
 }
 
 InstagramSection.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string
 }
 
 export default InstagramSection

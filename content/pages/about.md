@@ -7,6 +7,7 @@ featuredImage: '../images/bg/bg-black.gif'
 featuredLogo2: '../images/logos/bakked-y.svg'
 aboutImage1: '../images/photos/about-img-2.jpg'
 aboutImage2: '../images/photos/about-img-3.jpg'
+sticker1: '../images/photos/stickers/sit-back-get-bakked.png'
 subtitle: Updates soon..
 section1: >-
 featureArray:

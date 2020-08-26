@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import { Fade } from 'react-awesome-reveal'
 import { MapPin } from 'react-feather'
+import { motion } from 'framer-motion'
 
 import Layout from '../components/Layout'
 import Content from '../components/Content'
@@ -11,8 +12,8 @@ import BakkedHeader from '../components/BakkedHeader'
 import FeatureArray from '../components/FeatureArray'
 import FindSection from '../components/FindSection'
 import FormSignUp from '../components/FormSignUp'
-import { BakkedMarquee } from '../components/BakkedMarquee'
-import { StripeMarquee } from '../components/StripeMarquee'
+import BakkedMarquee from '../components/BakkedMarquee'
+import StripesMarquee from '../components/StripeMarquee'
 import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
@@ -33,7 +34,7 @@ export const HomePageTemplate = ({
   section3,
   section4,
   section5,
-  featureArray,
+  featureArray
 }) => (
   <main className="Home">
     <BakkedHeader backgroundImage={featuredImage} />
@@ -48,9 +49,7 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <section className="Overflow--Container">
-      <BakkedMarquee />
-    </section>
+    <BakkedMarquee />
 
     <section className="section bg-primary-dusty">
       <div className="bg-product-stripes">
@@ -95,6 +94,8 @@ export const HomePageTemplate = ({
     <section className="section bg-primary-dusty">
       <div className="container breaker">&nbsp;</div>
     </section>
+    <StripesMarquee />
+
     <section className="section bg-primary-dusty">
       <div className="bg-product-stripes-left">
         <div className="container">
@@ -121,7 +122,19 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <StripeMarquee />
+    <Fade>
+      <section className="Overflow--Container">
+        <motion.div
+          animate={{ opacity: 1, x: 1000 }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 1000 }}
+          transition={{ duration: 6 }}
+          className="section thick bg-stripes"
+        >
+          Hello, Framer-Motion
+        </motion.div>
+      </section>
+    </Fade>
     <section className="section thick">
       <div className="text-center mx-auto py-4">
         <h2>EXTRACT TYPES</h2>

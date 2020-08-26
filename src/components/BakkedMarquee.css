@@ -1,45 +1,17 @@
 /* Marquee */
 .Marquee-Container {
-  width: 120%;
-  height: 400px;
-  margin: 50px 0 0 -50px;
-  transform: rotate(-3deg);
-  overflow: hidden;
-}
-.Marquee--Section {
-  position: relative;
-  clip-path: inset(0%);
-  width: 100%;
-  height: auto;
-  background-color: var(--secondary);
+  width: 100vw;
+  left: -5vw;
+  overflow: hidden !important;
+  font-family: var(--font-primary);
+  line-height: 2;
+  background-color: var(--primary);
   border-top: 2px solid var(--secondary);
   border-bottom: 2px solid var(--secondary);
-  padding: 0;
-  transition: background-color 0.3s ease-in-out;
-  user-select: none;
-  overflow: hidden;
-  z-index: 3;
 }
-.Marquee--Section:hover {
-  background-color: var(--primary);
+.Marquee--Container:hover {
+  background-color: var(--secondary);
 }
-.Marquee--Inner {
-  transition: color 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  white-space: nowrap !important;
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  font-family: var(--font-primary);
-  font-size: 15rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  line-height: 1;
-  color: white;
-}
-.Marquee--Inner:hover {
-  color: var(--secondary);
-}
-
 .bg-stripes {
   background: repeating-linear-gradient(
     -70deg,
@@ -53,4 +25,5 @@
   height: 200px;
   position: relative;
   overflow: hidden !important;
+  border: none;
 }

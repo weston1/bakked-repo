@@ -2305,6 +2305,11 @@ acorn@^7.2.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.0.tgz#e1ad486e6c54501634c6c397c5c121daa383607c"
   integrity sha512-+G7P8jJmCHr+S+cLfQxygbWhXy+8YTVGzAkpEbcLo2mLoL7tij/VG41QSHACSf5QgYRhMZYHuNc6drJaO0Da+w==
 
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=
+
 address@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
@@ -12728,6 +12733,11 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
+react-ticker@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-ticker/-/react-ticker-1.2.2.tgz#12cda5ff8266c6fe90ffcd8c58e12ba1596ddf24"
+  integrity sha512-PXUujoPJvajxwOfosuuujlrBUrjgGp4FB4haWFOI25ujhMppW4SuLkiOdQ9AylrWN3yTHWdk2kbQWe3n9SjFGA==
+
 react@^16.11.0, react@^16.13.1, react@^16.8.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
@@ -16288,6 +16298,11 @@ yargs@^15.3.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
+
+yarn@^1.22.4:
+  version "1.22.4"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.4.tgz#01c1197ca5b27f21edc8bc472cd4c8ce0e5a470e"
+  integrity sha512-oYM7hi/lIWm9bCoDMEWgffW8aiNZXCWeZ1/tGy0DWrN6vmzjCXIKu2Y21o8DYVBUtiktwKcNoxyGl/2iKLUNGA==
 
 yauzl@^2.4.2:
   version "2.10.0"

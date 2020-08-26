@@ -10,13 +10,13 @@ export default props => {
   const timer = React.useRef()
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
-    duration: 2000,
+    duration: 6000,
     dragStart: () => {
       setPause(true)
     },
     dragEnd: () => {
       setPause(false)
-    },
+    }
   })
 
   React.useEffect(() => {
