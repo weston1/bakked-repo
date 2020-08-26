@@ -84,7 +84,7 @@ export default class FeatureArray extends Component {
                 key={_kebabCase(image.alt) + '-' + index}
                 onClick={() => this.isOpen(true, index)}
               >
-                <div>
+                <div className="FeatureArray--Petri--Container">
                   <Image
                     resolutions="small"
                     src={image.image}
@@ -92,7 +92,7 @@ export default class FeatureArray extends Component {
                     className="img-fluid FeatureArray--Petri"
                   />
                 </div>
-                <div>
+                <div className="FeatureArray--Sticker--Container">
                   <Image
                     resolutions="small"
                     src={image.sticker}

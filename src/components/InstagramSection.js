@@ -30,7 +30,7 @@ const InstagramSection = ({ title, className = '' }) => {
 }
 
 InstagramSection.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
 }
 
 export default InstagramSection

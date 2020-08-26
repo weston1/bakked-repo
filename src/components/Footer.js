@@ -17,16 +17,27 @@ export default () => (
                 alt="Bakked"
                 className="img-fluid"
               />
+              <div className="d-block d-md-none d-lg-none mx-auto text-center footer-credits">
+                <li>
+                  <Instagram />
+                </li>
+                <li>
+                  <Facebook />
+                </li>
+                <li>
+                  <MessageCircle />
+                </li>
+              </div>
             </div>
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-3 col-12 text-center-sm">
               <h4>Subscribe</h4>
               <FormMini />
             </div>
-            <div className="col-lg-3 col-6">
-              <div className="col-lg-6 mx-auto">
+            <div className="col-lg-3 col-12">
+              <div className="col-lg-6 mx-auto text-center-sm">
                 <h4>Explore</h4>
                 <div className="row">
-                  <div className="col">
+                  <div className="col-lg-2 col-12">
                     <li>
                       <Link to="/gyro/">Gyro</Link>
                     </li>

@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
+import AgeGate from './AgeGate'
 import Nav from './Nav'
 import Footer from './Footer'
 
@@ -64,7 +65,6 @@ export default ({ children, meta, title }) => {
               />
               {/* Add font link tags here */}
             </Helmet>
-
             <Meta
               googleTrackingId={googleTrackingId}
               absoluteImageUrl={
@@ -76,10 +76,12 @@ export default ({ children, meta, title }) => {
               {...data.settingsYaml}
             />
 
+            <Fragment>
+              <AgeGate />
+            </Fragment>
+
             <Nav subNav={subNav} />
-
             <Fragment>{children}</Fragment>
-
             <Footer />
           </Fragment>
         )

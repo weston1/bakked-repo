@@ -13,7 +13,7 @@ import FeatureArray from '../components/FeatureArray'
 import FindSection from '../components/FindSection'
 import FormSignUp from '../components/FormSignUp'
 import BakkedMarquee from '../components/BakkedMarquee'
-import StripesMarquee from '../components/StripeMarquee'
+import StripesMarquee from '../components/StripesMarquee'
 import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
@@ -49,28 +49,32 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <BakkedMarquee />
+    <section className="Overflow--Container Marquee--Clip">
+      <BakkedMarquee />
+    </section>
 
     <section className="section bg-primary-dusty">
       <div className="bg-product-stripes">
         <div className="container">
-          <div className="row col-lg-10 mx-auto">
-            <div className="col-lg-6 p-3">
+          <div className="row col-lg-12 mx-auto">
+            <div className="col-lg-5 p-3">
               <img
                 src={bakkedImg1}
                 alt={title}
                 className="img-fluid mx-auto py-4 text-center"
               />
               <Content source={section2} className="text-left" />
-              <Link to="/products" className="button">
-                SEE WHY WE MADE IT
-              </Link>
-              <Link to="/find" className="button">
-                <MapPin size="12px" className="title" />
-                &nbsp; FIND A DISPENSARY
-              </Link>
+              <div className="button-block">
+                <Link to="/products/" className="button">
+                  SEE WHY WE MADE IT
+                </Link>
+                <Link to="/find/" className="button">
+                  <MapPin size="12px" className="title" />
+                  &nbsp; FIND A DISPENSARY
+                </Link>
+              </div>
             </div>
-            <div className="col-lg-6 my-auto bg-dots">
+            <div className="col-lg-7 my-auto bg-dots">
               <img
                 src={bakkedImg22}
                 alt={title}
@@ -79,22 +83,21 @@ export const HomePageTemplate = ({
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-4 col-8 mx-auto">
-              <img src={sticker1} alt={title} className="sticker" />
-            </div>
-            <div className="col-lg-4 col-md-4 col-8 mx-auto">
-              <img src={sticker3} alt={title} className="sticker " />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <section className="section bg-primary-dusty">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-8 mx-auto">
+            <img src={sticker1} alt={title} className="sticker" />
+          </div>
+          <div className="col-lg-4 col-md-4 col-8 mx-auto">
+            <img src={sticker3} alt={title} className="sticker " />
+          </div>
+        </div>
+      </div>
       <div className="container breaker">&nbsp;</div>
     </section>
-    <StripesMarquee />
 
     <section className="section bg-primary-dusty">
       <div className="bg-product-stripes-left">
@@ -122,19 +125,7 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <Fade>
-      <section className="Overflow--Container">
-        <motion.div
-          animate={{ opacity: 1, x: 1000 }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 1000 }}
-          transition={{ duration: 6 }}
-          className="section thick bg-stripes"
-        >
-          Hello, Framer-Motion
-        </motion.div>
-      </section>
-    </Fade>
+    <StripesMarquee />
     <section className="section thick">
       <div className="text-center mx-auto py-4">
         <h2>EXTRACT TYPES</h2>

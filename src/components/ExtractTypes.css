@@ -1,17 +1,17 @@
-.FeatureArray {
+.ExtractTypes {
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
   padding: 0 1rem;
 }
-.FeatureArray figcaption {
+.ExtractTypes figcaption {
   font-family: var(--font-primary);
   font-size: 2rem;
   line-height: 2.5rem;
   max-width: 300px;
 }
-.FeatureArray p {
+.ExtractTypes p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
@@ -23,71 +23,71 @@
 }
 
 @media screen and (max-width: 750px) {
-  .FeatureArray {
+  .ExtractTypes {
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 }
 
-.FeatureArray--Item {
+.ExtractTypes--Item {
   position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
 }
-.FeatureArray--Sticker--Container {
+.ExtractTypes--Sticker--Container {
   position: absolute;
   z-index: 555;
   background-color: transparent;
 }
-.FeatureArray--Petri {
+.ExtractTypes--Petri {
   height: 330px;
   width: auto;
   position: inherit;
   z-index: 555;
   transition: all 0.3s ease;
 }
-.FeatureArray--Petri:hover {
+.ExtractTypes--Petri:hover {
   transform: rotate(10deg);
   box-shadow: 0 -1px 10px rgba(72, 72, 72, 0.025),
     0 10px 20px rgba(72, 72, 72, 0.05);
 }
 @media screen and (max-width: 750px) {
-  .FeatureArray--Item {
+  .ExtractTypes--Item {
     width: 75%;
   }
-  .FeatureArray--Petri {
+  .ExtractTypes--Petri {
     height: 250px;
     width: auto;
   }
 }
 
-.FeatureArray--Item > div {
+.ExtractTypes--Item > div {
   position: relative;
   width: 100%;
 }
 
-.FeatureArray--Item figcaption {
+.ExtractTypes--Item figcaption {
   text-align: center;
   font-family: var(--font-secondary);
   padding: 2rem 0;
   text-transform: uppercase;
   width: 50%;
 }
-.FeatureArray--Sticker--Container {
+.ExtractTypes--Sticker--Container {
   position: absolute;
   margin-top: -30px;
   z-index: 0;
 }
-.FeatureArray--Sticker {
+.ExtractTypes--Sticker {
   height: 72px;
   width: auto;
 }
 
 @supports (object-fit: contain) {
-  .FeatureArray--Item img {
+  .ExtractTypes--Item img {
     object-fit: contain;
     object-position: center;
     width: 386px;

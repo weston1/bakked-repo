@@ -48,23 +48,21 @@
   font-style: normal;
   line-height: 2;
   letter-spacing: -0.93px;
-  text-transformmini: uppercase;
-
+  text-transform: uppercase;
   font-family: var(--font-secondary);
   flex-grow: 1;
   box-sizing: border-box;
-
   display: block;
   margin: 0;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 3px whitesmoke #000;
   transition: border-color 0.2s;
   resize: none;
   width: 100%;
   transition: 0.3s ease all;
-  background: white;
+  background: transparent;
 }
 
 .FormMini--InputText:valid,
@@ -141,7 +139,10 @@
   box-shadow: none;
 }
 .FormMini--Input::placeholder {
-  color: black;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: whitesmoke;
 }
 
 .FormMini--Alert {

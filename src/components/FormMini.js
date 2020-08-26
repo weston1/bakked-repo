@@ -5,7 +5,7 @@ import './FormMini.css'
 export default ({
   name = 'Form Mini',
   subject = '', // optional subject of the notification email
-  action = '',
+  action = ''
 }) => (
   <form
     className="FormMini"
@@ -36,7 +36,7 @@ export default ({
     {!!subject && <input type="hidden" name="subject" value={subject} />}
     <input type="hidden" name="FormMini-name" value={name} />
     <input
-      className="Button FormMini--SubmitButton"
+      className="button FormMini--SubmitButton"
       type="submit"
       value="SUBMIT"
     />

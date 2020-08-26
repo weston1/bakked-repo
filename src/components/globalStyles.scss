@@ -131,7 +131,7 @@ span {
   }
   h2 {
     font-size: 48px;
-    line-height: 70px;
+    line-height: 1;
     text-transform: uppercase;
   }
   h3 {
@@ -162,6 +162,8 @@ span {
   p {
     font-size: 17px;
     line-height: 1.6;
+    text-align: justify;
+    text-align-last: center;
   }
 }
 
@@ -1222,6 +1224,17 @@ ul {
 .text-center {
   text-align: center !important;
 }
+@media (max-width: 600px) {
+  .text-left-sm {
+    text-align: left;
+  }
+  .text-right-sm {
+    text-align: right;
+  }
+  .text-center-sm {
+    text-align: center;
+  }
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -1373,17 +1386,17 @@ blockquote {
   vertical-align: middle;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: var(--font-secondary);
   display: inline-block;
-  padding: 1.5rem;
-  margin: 0.2rem 0.5rem 0.2rem 0;
+  padding: 2rem;
+  margin: 1rem 0.5rem 0.2rem 0;
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
   border-radius: var(--borderRadius);
   text-align: center;
-  width: 300px;
+  min-width: 300px;
 }
 .button-w {
   background: white;
@@ -1440,7 +1453,15 @@ blockquote {
   align-items: center;
   justify-content: center;
 }
-
+.button-block {
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  .button {
+    align-content: center;
+    width: 100%;
+  }
+}
 /* Background */
 
 .sticker {
@@ -1593,4 +1614,8 @@ blockquote {
 
 .Overflow--Container {
   overflow: hidden !important;
+}
+.Marquee--Clip {
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+  background: #000;
 }

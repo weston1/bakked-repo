@@ -21,7 +21,7 @@ section1: >-
 section2: >-
   A gravity defying innovation. There is no up. There is no down. There is no side-to-side. Only you and your dabs that won’t spill no matter what you do. Designed for weekend couch surfing, or whatever. Your pockets will thank you.
 section3: >-
-  The name says it all - the ultimate dabbing apparatus, that you can ooze anywhere. This swiss-army knife of dabbing that can be used to top a bowl, line a blunt, dress a joint or dab directly onto a nail. Just click, apply & cap to #seshwithoutthemess.
+  The name says it all - the ultimate dabbing apparatus, that you can ooze anywhere. This swiss-army knife of dabbing that can be used to top a bowl, line a blunt, dress a joint or dab directly onto a nail. Just click, apply & cap to **#SeshWithoutTheMess**.
 section4: >-
   TESTING IN SESSION: DIAMONDS, ROSIN & LIVE BUDDER
 section5: >-

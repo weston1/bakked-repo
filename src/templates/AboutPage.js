@@ -18,7 +18,7 @@ export const AboutPageTemplate = ({
   aboutImage2,
   sticker1,
   section1,
-  body
+  body,
 }) => (
   <main className="Home">
     <section className="section thick">

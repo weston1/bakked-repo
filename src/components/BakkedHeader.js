@@ -16,7 +16,7 @@ export default props => {
     },
     dragEnd: () => {
       setPause(false)
-    }
+    },
   })
 
   React.useEffect(() => {
