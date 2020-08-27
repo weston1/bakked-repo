@@ -5,7 +5,7 @@ import './BakkedMarquee.css'
 
 const StripesMarquee = () => (
   <section className="StripesMarquee">
-    <Ticker speed={1}>
+    <Ticker speed={2}>
       {() => (
         <div className="my-auto StripesMarquee--Motion">
           <h1>
