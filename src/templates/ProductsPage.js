@@ -5,6 +5,7 @@ import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
 import Image from '../components/Image'
 import KeenSlider from '../components/KeenSlider'
+import FooterNote from '../components/FooterNote'
 
 import BackgroundVideo from '../components/BackgroundVideo'
 import { ShoppingCart, MapPin } from 'react-feather'
@@ -29,6 +30,8 @@ export const ProductsPageTemplate = ({
   sticker3,
   featureBlock1,
   featureBlock2,
+  footerNote1,
+  footerNote2
 }) => (
   <main>
     <section className="BackgroundVideo-section">
@@ -36,7 +39,7 @@ export const ProductsPageTemplate = ({
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
     </section>
-    <section className="section">
+    <section className="section Product--Header">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -59,7 +62,9 @@ export const ProductsPageTemplate = ({
           </div>
         </div>
       </div>
+      <img alt="Bakked Sticker 1" src="../images/svg/caution-tape.svg" />
     </section>
+
     <section className="section bg-stripes"></section>
     <section className="section">
       <div className="container col-lg-10 text-center">
@@ -72,15 +77,20 @@ export const ProductsPageTemplate = ({
       </div>
     </section>
 
-    <section className="section bg-primary">
-      <div className="container row">
-        <div className="col-lg-6">
-          <small>TEST 4.12C</small>
-          <h2>ANTI-GRAVITY SIMULATOR</h2>
-          <KeenSlider />
+    <section className="section bg-dusty">
+      <div className="col-lg-12">
+        <small>TEST 4.12C</small>
+        <h2>ANTI-GRAVITY SIMULATOR</h2>
+      </div>
+      <KeenSlider />
+      <div className="row">
+        <div className="col-6">
+          Group A is given a standard dab container and asked to walk around
+          with it on their person for the entire day and to report back.
         </div>
-        <div className="col-lg-6">
-          <KeenSlider />
+        <div className="col-6">
+          Group B is given a container full of concentrate anchored with a
+          gyroscoping base and asked to walk around with it all day.
         </div>
       </div>
     </section>
@@ -94,7 +104,7 @@ export const ProductsPageTemplate = ({
       </div>
     </section>
 
-    <section className="section bg-stripes"></section>
+    <img alt="Bakked Sticker 1" src="../images/svg/caution-tape.svg" />
 
     <section className="section bg-primary-dusty">
       <div className="container row">
@@ -129,18 +139,12 @@ export const ProductsPageTemplate = ({
         </div>
       </div>
     </section>
-
-    <section className="section">
-      <div className="container row">
-        <h3>See How We Made</h3>
-        <div className="col-lg-6 bg-rough-y">
-          <Content source={featureBlock1} />
-        </div>
-        <div className="col-lg-6 bg-secondary">
-          <Content source={featureBlock2} />
-        </div>
-      </div>
-    </section>
+    <img
+      src={footerNote1}
+      alt={title}
+      className="img-fluid mx-auto text-center"
+    />
+    <FooterNote />
   </main>
 )
 
@@ -182,6 +186,8 @@ export const pageQuery = graphql`
         sticker3
         featureBlock1
         featureBlock2
+        footerNote1
+        footerNote2
       }
     }
   }

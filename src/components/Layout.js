@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
-import AgeGate from './AgeGate'
 import Nav from './Nav'
 import Footer from './Footer'
 
@@ -47,7 +46,7 @@ export default ({ children, meta, title }) => {
               ? data.allPosts.edges.map(post => {
                   return { ...post.node.fields, ...post.node.frontmatter }
                 })
-              : false,
+              : false
           }
 
         return (
@@ -75,10 +74,6 @@ export default ({ children, meta, title }) => {
               {...meta}
               {...data.settingsYaml}
             />
-
-            <Fragment>
-              <AgeGate />
-            </Fragment>
 
             <Nav subNav={subNav} />
             <Fragment>{children}</Fragment>

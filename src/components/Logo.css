@@ -15,11 +15,11 @@
 }
 .Logo svg:hover {
   color: var(--darkGrey);
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 .Logo svg:active {
   color: var(--darkGrey);
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 @media (max-width: 600px) {
   .Logo svg {

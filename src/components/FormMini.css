@@ -102,7 +102,7 @@
   border-bottom: 1px solid;
   height: 10px;
   width: 10px;
-  transformmini: translateY(-75%) rotate(45deg);
+  transform: translateY(-75%) rotate(45deg);
   pointer-events: none;
 }
 
@@ -207,7 +207,7 @@
   display: block;
   right: 100%;
   top: 50%;
-  transformmini: translateY(-50%);
+  transform: translateY(-50%);
   background: var(--lightGrey);
 }
 
@@ -220,13 +220,13 @@
   display: block;
   right: 100%;
   top: 50%;
-  transformmini: translateY(-50%);
+  transform: translateY(-50%);
   background: var(--primary);
 }
 
 .FormMini--RadioInput + span::after,
 .FormMini--CheckboxInput + span::after {
-  transformmini: scale(0.5);
+  transform: scale(0.5);
   transition: 0.3s ease all;
   content: '\2713';
   position: absolute;
@@ -241,5 +241,5 @@
 .FormMini--RadioInput:checked + span::after,
 .FormMini--CheckboxInput:checked + span::after {
   opacity: 1;
-  transformmini: scale(1);
+  transform: scale(1);
 }

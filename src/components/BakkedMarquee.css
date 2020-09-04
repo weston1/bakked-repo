@@ -28,6 +28,9 @@
 .StripesMarquee {
   margin: 0 auto;
   background: rgba(242, 180, 63, 1);
+  transform: rotate(-4deg);
+  z-index: 0;
+  margin-top: -120px;
 }
 .StripesMarquee--Motion {
   padding-top: 5rem;

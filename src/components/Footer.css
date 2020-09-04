@@ -9,8 +9,9 @@
 .brandLogo a {
   color: var(--darkGrey);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 0.5rem 0;
+  margin: 0;
 }
 .subscribe {
   background-color: var(--primary);
@@ -42,7 +43,6 @@
 }
 .footerNav li {
   font-family: var(--font-secondary);
-  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -54,12 +54,15 @@
   margin: 1rem 2rem 1rem 0;
   text-decoration: none;
   list-style: none;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 .footerNav a {
   color: whitesmoke;
+  transition: all 0.3s ease-in-out;
 }
 .footerNav a:hover {
-  opacity: 0.8;
+  color: var(--primary);
 }
 .footer {
   padding: 5rem 0;
@@ -86,6 +89,9 @@
 }
 .footer-credits li:hover {
   color: var(--primary);
+}
+.footer-credits p {
+  font-size: 16px;
 }
 .footer--stripes--container {
   background: url('../../static/images/bg/stardust.png'), var(--secondary);

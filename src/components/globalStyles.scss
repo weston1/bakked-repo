@@ -1384,9 +1384,13 @@ blockquote {
   text-decoration: none;
   text-align: justify;
   vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   letter-spacing: 0.05em;
   font-size: 1.8rem;
+  line-height: 1;
   font-family: var(--font-secondary);
   display: inline-block;
   padding: 2rem;
@@ -1596,7 +1600,10 @@ blockquote {
   background-position: top left;
   background-repeat: no-repeat;
 }
-
+/* Product Page */
+.Product--Header {
+  z-index: 2;
+}
 /* Product List */
 .product-list ul li {
   font-family: var(--font-secondary);
